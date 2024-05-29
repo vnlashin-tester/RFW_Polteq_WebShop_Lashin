@@ -14,9 +14,14 @@ Test Teardown         main.Close Page
 First case
     first_page.Log in from main page
     first_page.Log out from Your account page
+    Confirm that discount banner is avaliable on the page
 
 *** Keywords ***
 
+Confirm that discount banner is avaliable on the page
+    Click Element    ${main_logo_in_the_header}
+    Wait Until Element Is Visible    ${carousel_on_main_page}
+    Page Should Contain Element  ${discount_banner_on_the_main_page}  
 
     
 
@@ -28,9 +33,6 @@ First case
 
 *** Variables ***
 
-${sign_in_main_page}    //div[@id="_desktop_user_info"]
-${header_page_of_autorisation}    //header[@class="page-header"]
-${email_field_autorisation}    //div[@class="col-md-6"]/input[@type="email"]
-${password_field_autorisation}    //input[@type="password"]
-${button_sighn_in_form_of_autorisation}    //button[@id="submit-login"]
-${header_page_witch_autorased}    //header[@class="page-header"]
+${main_logo_in_the_header}    //div[@id="_desktop_logo"]
+${carousel_on_main_page}    //div[@id="carousel"]
+${discount_banner_on_the_main_page}    //a[@class="banner"]
