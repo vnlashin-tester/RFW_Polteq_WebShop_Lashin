@@ -16,7 +16,7 @@ Log in from main page
     Input Password    ${password_field_autorisation}    ${PASSWORD}
     Click Button    ${button_sighn_in_form_of_autorisation}
     Wait Until Element Is Visible    ${header_page_witch_autorased}
-    Sleep    3s
+   
     
 Log out from Your account page    
     Click Element    ${go_to_your_account}
