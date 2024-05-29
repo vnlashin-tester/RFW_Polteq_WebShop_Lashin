@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.2 on darwin)" generated="2024-05-29T13:11:24.872781" rpa="false" schemaversion="5">
+<suite id="s1" name="RFW Polteq WebShop Lashin" source="/Users/vl/Git/RFW_Polteq_WebShop_Lashin">
+<suite id="s1-s1" name="Tests" source="/Users/vl/Git/RFW_Polteq_WebShop_Lashin/tests">
+<suite id="s1-s1-s1" name="First Page" source="/Users/vl/Git/RFW_Polteq_WebShop_Lashin/tests/first_page.robot">
+<test id="s1-s1-s1-t1" name="First case" line="13">
+<kw name="Open Page" owner="main" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-29T13:11:25.009678" level="INFO">Opening browser 'chrome' to base url 'https://testshop.polteq-testing.com/'.</msg>
+<arg>${web_page}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-29T13:11:25.009393" elapsed="5.805371"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-29T13:11:30.817638" elapsed="0.444135"/>
+</kw>
+<arg>web_page=https://testshop.polteq-testing.com/</arg>
+<status status="PASS" start="2024-05-29T13:11:25.008633" elapsed="6.253591"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-29T13:11:31.267195" level="INFO">Clicking element '//button[@aria-label="Language dropdown"]'.</msg>
+<arg>//button[@aria-label="Language dropdown"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-29T13:11:31.263089" elapsed="0.062175"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-29T13:11:34.326624" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-29T13:11:31.325617" elapsed="3.001299"/>
+</kw>
+<kw name="Close Page" owner="main" type="TEARDOWN">
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2024-05-29T13:11:34.328789" elapsed="0.029092"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-05-29T13:11:34.358170" elapsed="0.190950"/>
+</kw>
+<status status="PASS" start="2024-05-29T13:11:34.327906" elapsed="0.221627"/>
+</kw>
+<status status="PASS" start="2024-05-29T13:11:25.008006" elapsed="9.541828"/>
+</test>
+<doc>This is first test</doc>
+<status status="PASS" start="2024-05-29T13:11:24.899421" elapsed="9.652873"/>
+</suite>
+<status status="PASS" start="2024-05-29T13:11:24.896474" elapsed="9.658481"/>
+</suite>
+<status status="PASS" start="2024-05-29T13:11:24.877449" elapsed="9.678839"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="RFW Polteq WebShop Lashin">RFW Polteq WebShop Lashin</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Tests">RFW Polteq WebShop Lashin.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="First Page">RFW Polteq WebShop Lashin.Tests.First Page</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
