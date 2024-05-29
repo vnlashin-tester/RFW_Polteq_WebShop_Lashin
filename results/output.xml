@@ -1,55 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.11.2 on darwin)" generated="2024-05-29T13:11:24.872781" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.11.2 on darwin)" generated="2024-05-29T15:23:47.040897" rpa="false" schemaversion="5">
 <suite id="s1" name="RFW Polteq WebShop Lashin" source="/Users/vl/Git/RFW_Polteq_WebShop_Lashin">
 <suite id="s1-s1" name="Tests" source="/Users/vl/Git/RFW_Polteq_WebShop_Lashin/tests">
 <suite id="s1-s1-s1" name="First Page" source="/Users/vl/Git/RFW_Polteq_WebShop_Lashin/tests/first_page.robot">
-<test id="s1-s1-s1-t1" name="First case" line="13">
+<test id="s1-s1-s1-t1" name="First case" line="14">
 <kw name="Open Page" owner="main" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-29T13:11:25.009678" level="INFO">Opening browser 'chrome' to base url 'https://testshop.polteq-testing.com/'.</msg>
+<msg time="2024-05-29T15:23:47.176516" level="INFO">Opening browser 'chrome' to base url 'https://testshop.polteq-testing.com/'.</msg>
 <arg>${web_page}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-29T13:11:25.009393" elapsed="5.805371"/>
+<status status="PASS" start="2024-05-29T15:23:47.176196" elapsed="3.729159"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-05-29T13:11:30.817638" elapsed="0.444135"/>
+<status status="PASS" start="2024-05-29T15:23:50.905919" elapsed="0.425292"/>
 </kw>
 <arg>web_page=https://testshop.polteq-testing.com/</arg>
-<status status="PASS" start="2024-05-29T13:11:25.008633" elapsed="6.253591"/>
+<status status="PASS" start="2024-05-29T15:23:47.175418" elapsed="4.156170"/>
+</kw>
+<kw name="Log in from main page">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-29T15:23:51.334299" level="INFO">Clicking element '//div[@id="_desktop_user_info"]'.</msg>
+<arg>${sign_in_main_page}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-29T15:23:51.332870" elapsed="0.304113"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${header_page_of_autorisation}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-29T15:23:51.637269" elapsed="0.021299"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-29T13:11:31.267195" level="INFO">Clicking element '//button[@aria-label="Language dropdown"]'.</msg>
-<arg>//button[@aria-label="Language dropdown"]</arg>
+<msg time="2024-05-29T15:23:51.659306" level="INFO">Clicking element '//div[@class="col-md-6"]/input[@type="email"]' with clear.</msg>
+<arg>${email_field_autorisation}</arg>
+<arg>clear</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-29T13:11:31.263089" elapsed="0.062175"/>
+<status status="PASS" start="2024-05-29T15:23:51.658911" elapsed="0.290016"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-29T15:23:51.949681" level="INFO">Typing text 'tester@test.com' into text field '//div[@class="col-md-6"]/input[@type="email"]'.</msg>
+<arg>${email_field_autorisation}</arg>
+<arg>${LOGIN}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-29T15:23:51.949255" elapsed="0.140325"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-29T15:23:52.090242" level="INFO">Clicking element '//input[@type="password"]' with clear.</msg>
+<arg>${password_field_autorisation}</arg>
+<arg>clear</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-29T15:23:52.089858" elapsed="0.277792"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-29T15:23:52.368231" level="INFO">Typing password into text field '//input[@type="password"]'.</msg>
+<msg time="2024-05-29T15:23:52.392464" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${password_field_autorisation}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-29T15:23:52.367904" elapsed="0.044991"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-29T15:23:52.413420" level="INFO">Clicking button '//button[@id="submit-login"]'.</msg>
+<arg>${button_sighn_in_form_of_autorisation}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-29T15:23:52.413132" elapsed="0.468944"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${header_page_witch_autorased}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-29T15:23:52.882351" elapsed="0.016309"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-05-29T13:11:34.326624" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-05-29T15:23:55.899928" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-05-29T13:11:31.325617" elapsed="3.001299"/>
+<status status="PASS" start="2024-05-29T15:23:52.898916" elapsed="3.001317"/>
+</kw>
+<status status="PASS" start="2024-05-29T15:23:51.332193" elapsed="4.568303"/>
+</kw>
+<kw name="Log out from Your account page">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-29T15:23:55.901953" level="INFO">Clicking element '//a[contains(text(), "Sign out")]'.</msg>
+<arg>//a[contains(text(), "Sign out")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-29T15:23:55.901562" elapsed="0.358038"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${header_page_of_autorisation}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-29T15:23:56.259836" elapsed="0.025999"/>
+</kw>
+<status status="PASS" start="2024-05-29T15:23:55.900880" elapsed="0.385159"/>
 </kw>
 <kw name="Close Page" owner="main" type="TEARDOWN">
 <kw name="Delete All Cookies" owner="SeleniumLibrary">
 <doc>Deletes all cookies.</doc>
-<status status="PASS" start="2024-05-29T13:11:34.328789" elapsed="0.029092"/>
+<status status="PASS" start="2024-05-29T15:23:56.286754" elapsed="0.012054"/>
 </kw>
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2024-05-29T13:11:34.358170" elapsed="0.190950"/>
+<status status="PASS" start="2024-05-29T15:23:56.299045" elapsed="0.162822"/>
 </kw>
-<status status="PASS" start="2024-05-29T13:11:34.327906" elapsed="0.221627"/>
+<status status="PASS" start="2024-05-29T15:23:56.286408" elapsed="0.175744"/>
 </kw>
-<status status="PASS" start="2024-05-29T13:11:25.008006" elapsed="9.541828"/>
+<status status="PASS" start="2024-05-29T15:23:47.174771" elapsed="9.287634"/>
 </test>
 <doc>This is first test</doc>
-<status status="PASS" start="2024-05-29T13:11:24.899421" elapsed="9.652873"/>
+<status status="PASS" start="2024-05-29T15:23:47.064844" elapsed="9.398777"/>
 </suite>
-<status status="PASS" start="2024-05-29T13:11:24.896474" elapsed="9.658481"/>
+<status status="PASS" start="2024-05-29T15:23:47.062315" elapsed="9.403649"/>
 </suite>
-<status status="PASS" start="2024-05-29T13:11:24.877449" elapsed="9.678839"/>
+<status status="PASS" start="2024-05-29T15:23:47.043716" elapsed="9.423321"/>
 </suite>
 <statistics>
 <total>
