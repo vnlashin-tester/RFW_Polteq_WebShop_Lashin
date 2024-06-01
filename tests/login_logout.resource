@@ -1,6 +1,6 @@
 *** Settings ***
 
-Documentation    This are resources for first_test
+Documentation    This is resource file for LogIN and LogOut. 
 Library    SeleniumLibrary
 Resource    ../main.resource
 Variables   ../variables.py
