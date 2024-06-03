@@ -15,11 +15,16 @@ Test Teardown         main.Close Page
 
 Menu_items
     login_logout.Log in from main page
+    
     Check the Clothes menu and Clothes > sub-menus
     Check the Clothes > Women sub-menu
+    Check the Clothes menu and both Men and Women pages
+
     Check the Accessories menu and Accessories > sub-menus
-    
     Check the Accessories > Home accessories
+    
+    Check the Accessories menu and both Stationery and Home Accessories pages
+    
     Check the Art - menu
 
     login_logout.Log out from Your account page
@@ -67,7 +72,15 @@ Check the Clothes > Women sub-menu
     FOR  ${child}  IN  @{children}
         Element Should Be Visible    ${child}
     END
-    
+
+Check the Clothes menu and both Men and Women pages
+    Click Element    ${main_logo_in_the_header}
+    Click Element   ${drop_down_menu_clothes}
+
+    Page Should Contain Element  ${clothes_menu_men}
+    Page Should Contain Element    ${clothes_menu_women}  
+    Page Should Contain Element    ${filter_by_block}
+
 Check the Accessories menu and Accessories > sub-menus
     Click Element    ${main_logo_in_the_header}
     Mouse Over    ${drop_down_menu_accessories} 
@@ -108,6 +121,16 @@ Check the Accessories > Home accessories
         Element Should Be Visible    ${child}
     END
 
+
+Check the Accessories menu and both Stationery and Home Accessories pages
+    Click Element    ${main_logo_in_the_header}
+    Click Element   ${drop_down_menu_accessories}
+
+    Page Should Contain Element  ${accessories_menu_stationery} 
+    Page Should Contain Element    ${accessories_menu_home_accessories} 
+    Page Should Contain Element    ${filter_by_block}
+
+
 Check the Art - menu
     Click Element    ${main_logo_in_the_header}
     
@@ -144,6 +167,9 @@ ${submenu_drop_down_menu_clothes_men}    //li[@id="category-4"]/a[contains(text(
 ${header_of_men_clothes_men}    //h1[contains(text(), "Men")]
 ${header_of_menu_clothes_women}    //h1[contains(text(), "Women")]
 
+${clothes_menu_men}    //ul[@ class="category-sub-menu"]//a[contains(text(), "Men")]
+${clothes_menu_women}    //ul[@ class="category-sub-menu"]//a[contains(text(), "Women")]
+
 
 #  For check menu_items_accessories "Accessories" and submenus "Stationerry" and "Home Accessories":
 
@@ -152,6 +178,9 @@ ${drop_menu_items_stationery}          //a[@class="dropdown-item dropdown-submen
 ${drop_menu_items_home_accessories}        //a[@class="dropdown-item dropdown-submenu" and contains(text(), "Home Accessories")]
 ${header_of_accessories_stationery}        //h1[contains(text(), "Stationery")]
 ${header_of_accessories_home_accessories}    //h1[contains(text(), "Home Accessories")]
+
+${accessories_menu_stationery}    //ul[@ class="category-sub-menu"]//a[contains(text(), "Stationery")]
+${accessories_menu_home_accessories}    //ul[@ class="category-sub-menu"]//a[contains(text(), "Home Accessories")]
 
 #  For check menu_items_art "Art":
 
