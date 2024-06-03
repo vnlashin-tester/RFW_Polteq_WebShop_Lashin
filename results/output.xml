@@ -1,586 +1,586 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.11.2 on darwin)" generated="2024-06-03T11:16:14.260126" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.11.2 on darwin)" generated="2024-06-03T11:21:54.712023" rpa="false" schemaversion="5">
 <suite id="s1" name="RFW Polteq WebShop Lashin" source="/Users/vl/Git/RFW_Polteq_WebShop_Lashin">
 <suite id="s1-s1" name="Tests" source="/Users/vl/Git/RFW_Polteq_WebShop_Lashin/tests">
 <suite id="s1-s1-s1" name="Menu Items" source="/Users/vl/Git/RFW_Polteq_WebShop_Lashin/tests/menu_items.robot">
-<test id="s1-s1-s1-t1" name="Menu_items" line="16">
+<test id="s1-s1-s1-t1" name="Menu_items" line="13">
 <kw name="Open Page" owner="main" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:14.445110" level="INFO">Opening browser 'chrome' to base url 'https://testshop.polteq-testing.com/'.</msg>
+<msg time="2024-06-03T11:21:54.900296" level="INFO">Opening browser 'chrome' to base url 'https://testshop.polteq-testing.com/'.</msg>
 <arg>${web_page}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-03T11:16:14.444818" elapsed="4.295580"/>
+<status status="PASS" start="2024-06-03T11:21:54.899806" elapsed="5.217512"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-06-03T11:16:18.741150" elapsed="0.406012"/>
+<status status="PASS" start="2024-06-03T11:22:00.117967" elapsed="0.423269"/>
 </kw>
 <arg>web_page=https://testshop.polteq-testing.com/</arg>
-<status status="PASS" start="2024-06-03T11:16:14.444059" elapsed="4.703760"/>
+<status status="PASS" start="2024-06-03T11:21:54.898864" elapsed="5.642657"/>
 </kw>
 <kw name="Log in from main page" owner="login_logout">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:19.153189" level="INFO">Clicking element '//div[@id="_desktop_user_info"]'.</msg>
+<msg time="2024-06-03T11:22:00.543880" level="INFO">Clicking element '//div[@id="_desktop_user_info"]'.</msg>
 <arg>${sign_in_main_page}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:19.150581" elapsed="0.295475"/>
+<status status="PASS" start="2024-06-03T11:22:00.543264" elapsed="0.289337"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${header_page_of_autorisation}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-03T11:16:19.446806" elapsed="0.026815"/>
+<status status="PASS" start="2024-06-03T11:22:00.832939" elapsed="0.027392"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:19.475069" level="INFO">Clicking element '//div[@class="col-md-6"]/input[@type="email"]' with clear.</msg>
+<msg time="2024-06-03T11:22:00.860940" level="INFO">Clicking element '//div[@class="col-md-6"]/input[@type="email"]' with clear.</msg>
 <arg>${email_field_autorisation}</arg>
 <arg>clear</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:19.474488" elapsed="0.297049"/>
+<status status="PASS" start="2024-06-03T11:22:00.860577" elapsed="0.293201"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:19.772362" level="INFO">Typing text 'tester@test.com' into text field '//div[@class="col-md-6"]/input[@type="email"]'.</msg>
+<msg time="2024-06-03T11:22:01.154489" level="INFO">Typing text 'tester@test.com' into text field '//div[@class="col-md-6"]/input[@type="email"]'.</msg>
 <arg>${email_field_autorisation}</arg>
 <arg>${LOGIN}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:19.771865" elapsed="0.133478"/>
+<status status="PASS" start="2024-06-03T11:22:01.154087" elapsed="0.142799"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:19.907476" level="INFO">Clicking element '//input[@type="password"]' with clear.</msg>
+<msg time="2024-06-03T11:22:01.298224" level="INFO">Clicking element '//input[@type="password"]' with clear.</msg>
 <arg>${password_field_autorisation}</arg>
 <arg>clear</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:19.906382" elapsed="0.277036"/>
+<status status="PASS" start="2024-06-03T11:22:01.297874" elapsed="0.275918"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:20.184136" level="INFO">Typing password into text field '//input[@type="password"]'.</msg>
-<msg time="2024-06-03T11:16:20.205290" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2024-06-03T11:22:01.574407" level="INFO">Typing password into text field '//input[@type="password"]'.</msg>
+<msg time="2024-06-03T11:22:01.596765" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${password_field_autorisation}</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:20.183730" elapsed="0.040725"/>
+<status status="PASS" start="2024-06-03T11:22:01.574046" elapsed="0.041644"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:20.225029" level="INFO">Clicking button '//button[@id="submit-login"]'.</msg>
+<msg time="2024-06-03T11:22:01.616228" level="INFO">Clicking button '//button[@id="submit-login"]'.</msg>
 <arg>${button_sighn_in_form_of_autorisation}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:20.224715" elapsed="0.505095"/>
+<status status="PASS" start="2024-06-03T11:22:01.615924" elapsed="0.879592"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${header_page_witch_autorased}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-03T11:16:20.730207" elapsed="0.022674"/>
+<status status="PASS" start="2024-06-03T11:22:02.495744" elapsed="0.021480"/>
 </kw>
-<status status="PASS" start="2024-06-03T11:16:19.149537" elapsed="1.603512"/>
+<status status="PASS" start="2024-06-03T11:22:00.542629" elapsed="1.974767"/>
 </kw>
-<kw name="Check the Clothes menu and Clothes &gt; sub-menus">
+<kw name="Check the Clothes menu and Clothes &gt; sub-menus" owner="menu_items">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:20.754141" level="INFO">Clicking element '//div[@id="_desktop_logo"]'.</msg>
+<msg time="2024-06-03T11:22:02.518298" level="INFO">Clicking element '//div[@id="_desktop_logo"]'.</msg>
 <arg>${main_logo_in_the_header}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:20.753866" elapsed="0.370773"/>
+<status status="PASS" start="2024-06-03T11:22:02.518063" elapsed="0.522163"/>
 </kw>
 <kw name="Mouse Over" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:21.125664" level="INFO">Simulating Mouse Over on element '//li[@ id="category-3" ]/a[@class="dropdown-item"]'.</msg>
+<msg time="2024-06-03T11:22:03.040873" level="INFO">Simulating Mouse Over on element '//li[@ id="category-3" ]/a[@class="dropdown-item"]'.</msg>
 <arg>${drop_down_menu_clothes}</arg>
 <doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:21.124989" elapsed="0.275075"/>
+<status status="PASS" start="2024-06-03T11:22:03.040488" elapsed="0.277829"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${submenu_drop_down_menu_clothes_men}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-03T11:16:21.400445" elapsed="0.014407"/>
+<status status="PASS" start="2024-06-03T11:22:03.318585" elapsed="0.013525"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:21.423286" level="INFO">Current page contains element '//a[@class="dropdown-item dropdown-submenu" and contains(text(), "Men")]'.</msg>
+<msg time="2024-06-03T11:22:03.340716" level="INFO">Current page contains element '//a[@class="dropdown-item dropdown-submenu" and contains(text(), "Men")]'.</msg>
 <arg>${drop_menu_items_men}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-06-03T11:16:21.415093" elapsed="0.008374"/>
+<status status="PASS" start="2024-06-03T11:22:03.332407" elapsed="0.008476"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:21.431945" level="INFO">Current page contains element '//a[@class="dropdown-item dropdown-submenu" and contains(text(), "Women")]'.</msg>
+<msg time="2024-06-03T11:22:03.349415" level="INFO">Current page contains element '//a[@class="dropdown-item dropdown-submenu" and contains(text(), "Women")]'.</msg>
 <arg>${drop_menu_items_women}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-06-03T11:16:21.423676" elapsed="0.008433"/>
+<status status="PASS" start="2024-06-03T11:22:03.341078" elapsed="0.008500"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:21.432649" level="INFO">Clicking element '//li[@id="category-4"]/a[contains(text(), "Men")]'.</msg>
+<msg time="2024-06-03T11:22:03.350113" level="INFO">Clicking element '//li[@id="category-4"]/a[contains(text(), "Men")]'.</msg>
 <arg>${submenu_drop_down_menu_clothes_men}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:21.432303" elapsed="0.276750"/>
+<status status="PASS" start="2024-06-03T11:22:03.349779" elapsed="0.409739"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${header_of_men_clothes_men}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-03T11:16:21.709319" elapsed="0.019460"/>
+<status status="PASS" start="2024-06-03T11:22:03.759995" elapsed="0.017698"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:21.739375" level="INFO">Current page contains element '//p[contains(text(), "Filter By")]'.</msg>
+<msg time="2024-06-03T11:22:03.785796" level="INFO">Current page contains element '//p[contains(text(), "Filter By")]'.</msg>
 <arg>${filter_by_block}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-06-03T11:16:21.729405" elapsed="0.010151"/>
+<status status="PASS" start="2024-06-03T11:22:03.777911" elapsed="0.008049"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:21.753187" level="INFO">Element '//section[@id="products"]' is displayed.</msg>
+<msg time="2024-06-03T11:22:03.798555" level="INFO">Element '//section[@id="products"]' is displayed.</msg>
 <arg>${PRODUCTS}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-03T11:16:21.739767" elapsed="0.013597"/>
+<status status="PASS" start="2024-06-03T11:22:03.786178" elapsed="0.012549"/>
 </kw>
 <kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:21.761861" level="INFO">${children_count} = 1</msg>
+<msg time="2024-06-03T11:22:03.807458" level="INFO">${children_count} = 1</msg>
 <var>${children_count}</var>
 <arg>${CHILD_ELEMENT}</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:21.753588" elapsed="0.008392"/>
+<status status="PASS" start="2024-06-03T11:22:03.798950" elapsed="0.008629"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
 <arg>${children_count} &gt; 0</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2024-06-03T11:16:21.762230" elapsed="0.000373"/>
+<status status="PASS" start="2024-06-03T11:22:03.807831" elapsed="0.000383"/>
 </kw>
 <kw name="Get WebElements" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:21.768121" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="5996fb3a9866a0af6112b08f97a6bb16", element="f.46E344BEEEEB18ABE2F421308D414FE5.d.FA2C0EDF3E6440C488BD4357717EFFB9.e.164")&gt;]</msg>
+<msg time="2024-06-03T11:22:03.813824" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="352609bc95c7d1438ee0d4e7c3921fb9", element="f.C05F574DF8B57A782BD4868BBB6B2BAB.d.4AAF94ED27D2D5D4B2EE45D4374F71B2.e.161")&gt;]</msg>
 <var>${children}</var>
 <arg>${CHILD_ELEMENT}</arg>
 <doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:21.762762" elapsed="0.005704"/>
+<status status="PASS" start="2024-06-03T11:22:03.808379" elapsed="0.005675"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:21.773889" level="INFO">Element '&lt;selenium.webdriver.remote.webelement.WebElement (session="5996fb3a9866a0af6112b08f97a6bb16", element="f.46E344BEEEEB18ABE2F421308D414FE5.d.FA2C0EDF3E6440C488BD4357717EFFB9.e.164")&gt;' is displayed.</msg>
+<msg time="2024-06-03T11:22:03.819581" level="INFO">Element '&lt;selenium.webdriver.remote.webelement.WebElement (session="352609bc95c7d1438ee0d4e7c3921fb9", element="f.C05F574DF8B57A782BD4868BBB6B2BAB.d.4AAF94ED27D2D5D4B2EE45D4374F71B2.e.161")&gt;' is displayed.</msg>
 <arg>${child}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-03T11:16:21.769332" elapsed="0.004735"/>
+<status status="PASS" start="2024-06-03T11:22:03.814777" elapsed="0.004969"/>
 </kw>
-<var name="${child}">&lt;selenium.webdriver.remote.webelement.WebElement (session="5996fb3a9866a0af6112b08f97a6bb16", element="f.46E344BEEEEB18ABE2F421308D414FE5.d.FA2C0EDF3E6440C488BD4357717EFFB9.e.164")&gt;</var>
-<status status="PASS" start="2024-06-03T11:16:21.769123" elapsed="0.005074"/>
+<var name="${child}">&lt;selenium.webdriver.remote.webelement.WebElement (session="352609bc95c7d1438ee0d4e7c3921fb9", element="f.C05F574DF8B57A782BD4868BBB6B2BAB.d.4AAF94ED27D2D5D4B2EE45D4374F71B2.e.161")&gt;</var>
+<status status="PASS" start="2024-06-03T11:22:03.814587" elapsed="0.005278"/>
 </iter>
 <var>${child}</var>
 <value>@{children}</value>
-<status status="PASS" start="2024-06-03T11:16:21.768737" elapsed="0.005571"/>
+<status status="PASS" start="2024-06-03T11:22:03.814232" elapsed="0.005709"/>
 </for>
-<status status="PASS" start="2024-06-03T11:16:20.753504" elapsed="1.020986"/>
+<status status="PASS" start="2024-06-03T11:22:02.517722" elapsed="1.302326"/>
 </kw>
-<kw name="Check the Clothes &gt; Women sub-menu">
+<kw name="Check the Clothes &gt; Women sub-menu" owner="menu_items">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:21.776030" level="INFO">Clicking element '//div[@id="_desktop_logo"]'.</msg>
+<msg time="2024-06-03T11:22:03.821110" level="INFO">Clicking element '//div[@id="_desktop_logo"]'.</msg>
 <arg>${main_logo_in_the_header}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:21.775218" elapsed="0.469865"/>
+<status status="PASS" start="2024-06-03T11:22:03.820846" elapsed="0.535005"/>
 </kw>
 <kw name="Mouse Over" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:22.246000" level="INFO">Simulating Mouse Over on element '//li[@ id="category-3" ]/a[@class="dropdown-item"]'.</msg>
+<msg time="2024-06-03T11:22:04.356429" level="INFO">Simulating Mouse Over on element '//li[@ id="category-3" ]/a[@class="dropdown-item"]'.</msg>
 <arg>${drop_down_menu_clothes}</arg>
 <doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:22.245497" elapsed="0.274587"/>
+<status status="PASS" start="2024-06-03T11:22:04.356063" elapsed="0.271974"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${drop_menu_items_women}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-03T11:16:22.520443" elapsed="0.011190"/>
+<status status="PASS" start="2024-06-03T11:22:04.628294" elapsed="0.011816"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:22.532128" level="INFO">Clicking element '//a[@class="dropdown-item dropdown-submenu" and contains(text(), "Women")]'.</msg>
+<msg time="2024-06-03T11:22:04.640665" level="INFO">Clicking element '//a[@class="dropdown-item dropdown-submenu" and contains(text(), "Women")]'.</msg>
 <arg>${drop_menu_items_women}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:22.531848" elapsed="0.264597"/>
+<status status="PASS" start="2024-06-03T11:22:04.640357" elapsed="0.286705"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${header_of_menu_clothes_women}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-03T11:16:22.796674" elapsed="0.018675"/>
+<status status="PASS" start="2024-06-03T11:22:04.927301" elapsed="0.022704"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:22.823236" level="INFO">Current page contains element '//p[contains(text(), "Filter By")]'.</msg>
+<msg time="2024-06-03T11:22:04.956776" level="INFO">Current page contains element '//p[contains(text(), "Filter By")]'.</msg>
 <arg>${filter_by_block}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-06-03T11:16:22.816115" elapsed="0.007304"/>
+<status status="PASS" start="2024-06-03T11:22:04.950220" elapsed="0.006736"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:22.833275" level="INFO">Element '//section[@id="products"]' is displayed.</msg>
+<msg time="2024-06-03T11:22:04.966703" level="INFO">Element '//section[@id="products"]' is displayed.</msg>
 <arg>${PRODUCTS}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-03T11:16:22.823629" elapsed="0.009831"/>
+<status status="PASS" start="2024-06-03T11:22:04.957165" elapsed="0.009831"/>
 </kw>
 <kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:22.839083" level="INFO">${children_count} = 1</msg>
+<msg time="2024-06-03T11:22:04.973293" level="INFO">${children_count} = 1</msg>
 <var>${children_count}</var>
 <arg>${CHILD_ELEMENT}</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:22.833691" elapsed="0.005509"/>
+<status status="PASS" start="2024-06-03T11:22:04.967239" elapsed="0.006272"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
 <arg>${children_count} &gt; 0</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2024-06-03T11:16:22.839407" elapsed="0.000337"/>
+<status status="PASS" start="2024-06-03T11:22:04.973722" elapsed="0.000341"/>
 </kw>
 <kw name="Get WebElements" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:22.845378" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="5996fb3a9866a0af6112b08f97a6bb16", element="f.46E344BEEEEB18ABE2F421308D414FE5.d.674D147AD97B3BA4293B1B4A7691A411.e.203")&gt;]</msg>
+<msg time="2024-06-03T11:22:04.979796" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="352609bc95c7d1438ee0d4e7c3921fb9", element="f.C05F574DF8B57A782BD4868BBB6B2BAB.d.E3A3047C283C1B06FAA18CE3E329ED0F.e.205")&gt;]</msg>
 <var>${children}</var>
 <arg>${CHILD_ELEMENT}</arg>
 <doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:22.839893" elapsed="0.005626"/>
+<status status="PASS" start="2024-06-03T11:22:04.974212" elapsed="0.005706"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:22.851381" level="INFO">Element '&lt;selenium.webdriver.remote.webelement.WebElement (session="5996fb3a9866a0af6112b08f97a6bb16", element="f.46E344BEEEEB18ABE2F421308D414FE5.d.674D147AD97B3BA4293B1B4A7691A411.e.203")&gt;' is displayed.</msg>
+<msg time="2024-06-03T11:22:04.985116" level="INFO">Element '&lt;selenium.webdriver.remote.webelement.WebElement (session="352609bc95c7d1438ee0d4e7c3921fb9", element="f.C05F574DF8B57A782BD4868BBB6B2BAB.d.E3A3047C283C1B06FAA18CE3E329ED0F.e.205")&gt;' is displayed.</msg>
 <arg>${child}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-03T11:16:22.846084" elapsed="0.005795"/>
+<status status="PASS" start="2024-06-03T11:22:04.980467" elapsed="0.004812"/>
 </kw>
-<var name="${child}">&lt;selenium.webdriver.remote.webelement.WebElement (session="5996fb3a9866a0af6112b08f97a6bb16", element="f.46E344BEEEEB18ABE2F421308D414FE5.d.674D147AD97B3BA4293B1B4A7691A411.e.203")&gt;</var>
-<status status="PASS" start="2024-06-03T11:16:22.845918" elapsed="0.006264"/>
+<var name="${child}">&lt;selenium.webdriver.remote.webelement.WebElement (session="352609bc95c7d1438ee0d4e7c3921fb9", element="f.C05F574DF8B57A782BD4868BBB6B2BAB.d.E3A3047C283C1B06FAA18CE3E329ED0F.e.205")&gt;</var>
+<status status="PASS" start="2024-06-03T11:22:04.980308" elapsed="0.005090"/>
 </iter>
 <var>${child}</var>
 <value>@{children}</value>
-<status status="PASS" start="2024-06-03T11:16:22.845670" elapsed="0.006633"/>
+<status status="PASS" start="2024-06-03T11:22:04.980065" elapsed="0.005403"/>
 </for>
-<status status="PASS" start="2024-06-03T11:16:21.774840" elapsed="1.077694"/>
+<status status="PASS" start="2024-06-03T11:22:03.820418" elapsed="1.165148"/>
 </kw>
-<kw name="Check the Clothes menu and both Men and Women pages">
+<kw name="Check the Clothes menu and both Men and Women pages" owner="menu_items">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:22.853665" level="INFO">Clicking element '//div[@id="_desktop_logo"]'.</msg>
+<msg time="2024-06-03T11:22:04.987092" level="INFO">Clicking element '//div[@id="_desktop_logo"]'.</msg>
 <arg>${main_logo_in_the_header}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:22.853364" elapsed="0.420112"/>
+<status status="PASS" start="2024-06-03T11:22:04.986587" elapsed="0.580881"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:23.274134" level="INFO">Clicking element '//li[@ id="category-3" ]/a[@class="dropdown-item"]'.</msg>
+<msg time="2024-06-03T11:22:05.568010" level="INFO">Clicking element '//li[@ id="category-3" ]/a[@class="dropdown-item"]'.</msg>
 <arg>${drop_down_menu_clothes}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:23.273742" elapsed="0.363821"/>
+<status status="PASS" start="2024-06-03T11:22:05.567696" elapsed="0.330753"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:23.650580" level="INFO">Current page contains element '//ul[@ class="category-sub-menu"]//a[contains(text(), "Men")]'.</msg>
+<msg time="2024-06-03T11:22:05.912930" level="INFO">Current page contains element '//ul[@ class="category-sub-menu"]//a[contains(text(), "Men")]'.</msg>
 <arg>${clothes_menu_men}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-06-03T11:16:23.637806" elapsed="0.013373"/>
+<status status="PASS" start="2024-06-03T11:22:05.898741" elapsed="0.014370"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:23.663394" level="INFO">Current page contains element '//ul[@ class="category-sub-menu"]//a[contains(text(), "Women")]'.</msg>
+<msg time="2024-06-03T11:22:05.925962" level="INFO">Current page contains element '//ul[@ class="category-sub-menu"]//a[contains(text(), "Women")]'.</msg>
 <arg>${clothes_menu_women}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-06-03T11:16:23.651790" elapsed="0.011769"/>
+<status status="PASS" start="2024-06-03T11:22:05.913317" elapsed="0.012809"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:23.669367" level="INFO">Current page contains element '//p[contains(text(), "Filter By")]'.</msg>
+<msg time="2024-06-03T11:22:05.931529" level="INFO">Current page contains element '//p[contains(text(), "Filter By")]'.</msg>
 <arg>${filter_by_block}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-06-03T11:16:23.663758" elapsed="0.005785"/>
+<status status="PASS" start="2024-06-03T11:22:05.926322" elapsed="0.005377"/>
 </kw>
-<status status="PASS" start="2024-06-03T11:16:22.852920" elapsed="0.816781"/>
+<status status="PASS" start="2024-06-03T11:22:04.985931" elapsed="0.945924"/>
 </kw>
-<kw name="Check the Accessories menu and Accessories &gt; sub-menus">
+<kw name="Check the Accessories menu and Accessories &gt; sub-menus" owner="menu_items">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:23.671038" level="INFO">Clicking element '//div[@id="_desktop_logo"]'.</msg>
+<msg time="2024-06-03T11:22:05.932932" level="INFO">Clicking element '//div[@id="_desktop_logo"]'.</msg>
 <arg>${main_logo_in_the_header}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:23.670472" elapsed="0.523648"/>
+<status status="PASS" start="2024-06-03T11:22:05.932659" elapsed="0.484753"/>
 </kw>
 <kw name="Mouse Over" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:24.194674" level="INFO">Simulating Mouse Over on element '//li[@id="category-6"]'.</msg>
+<msg time="2024-06-03T11:22:06.418125" level="INFO">Simulating Mouse Over on element '//li[@id="category-6"]'.</msg>
 <arg>${drop_down_menu_accessories}</arg>
 <doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:24.194341" elapsed="0.273846"/>
+<status status="PASS" start="2024-06-03T11:22:06.417762" elapsed="0.274899"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${drop_menu_items_stationery}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-03T11:16:24.468467" elapsed="0.013868"/>
+<status status="PASS" start="2024-06-03T11:22:06.693096" elapsed="0.014065"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:24.487810" level="INFO">Current page contains element '//a[@class="dropdown-item dropdown-submenu" and contains(text(), "Stationery")]'.</msg>
+<msg time="2024-06-03T11:22:06.712643" level="INFO">Current page contains element '//a[@class="dropdown-item dropdown-submenu" and contains(text(), "Stationery")]'.</msg>
 <arg>${drop_menu_items_stationery}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-06-03T11:16:24.482547" elapsed="0.005432"/>
+<status status="PASS" start="2024-06-03T11:22:06.707376" elapsed="0.005431"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:24.496272" level="INFO">Current page contains element '//a[@class="dropdown-item dropdown-submenu" and contains(text(), "Home Accessories")]'.</msg>
+<msg time="2024-06-03T11:22:06.720976" level="INFO">Current page contains element '//a[@class="dropdown-item dropdown-submenu" and contains(text(), "Home Accessories")]'.</msg>
 <arg>${drop_menu_items_home_accessories}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-06-03T11:16:24.488172" elapsed="0.008271"/>
+<status status="PASS" start="2024-06-03T11:22:06.713004" elapsed="0.008147"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:24.496963" level="INFO">Clicking element '//a[@class="dropdown-item dropdown-submenu" and contains(text(), "Stationery")]'.</msg>
+<msg time="2024-06-03T11:22:06.721684" level="INFO">Clicking element '//a[@class="dropdown-item dropdown-submenu" and contains(text(), "Stationery")]'.</msg>
 <arg>${drop_menu_items_stationery}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:24.496637" elapsed="0.285569"/>
+<status status="PASS" start="2024-06-03T11:22:06.721356" elapsed="0.397089"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${header_of_accessories_stationery}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-03T11:16:24.782455" elapsed="0.026580"/>
+<status status="PASS" start="2024-06-03T11:22:07.118686" elapsed="0.019731"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:24.817384" level="INFO">Current page contains element '//p[contains(text(), "Filter By")]'.</msg>
+<msg time="2024-06-03T11:22:07.146233" level="INFO">Current page contains element '//p[contains(text(), "Filter By")]'.</msg>
 <arg>${filter_by_block}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-06-03T11:16:24.809675" elapsed="0.007876"/>
+<status status="PASS" start="2024-06-03T11:22:07.138632" elapsed="0.007770"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:24.827416" level="INFO">Element '//section[@id="products"]' is displayed.</msg>
+<msg time="2024-06-03T11:22:07.158134" level="INFO">Element '//section[@id="products"]' is displayed.</msg>
 <arg>${PRODUCTS}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-03T11:16:24.817749" elapsed="0.009830"/>
+<status status="PASS" start="2024-06-03T11:22:07.146599" elapsed="0.011698"/>
 </kw>
 <kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:24.833837" level="INFO">${children_count} = 1</msg>
+<msg time="2024-06-03T11:22:07.163756" level="INFO">${children_count} = 1</msg>
 <var>${children_count}</var>
 <arg>${CHILD_ELEMENT}</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:24.827777" elapsed="0.006177"/>
+<status status="PASS" start="2024-06-03T11:22:07.158494" elapsed="0.005378"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
 <arg>${children_count} &gt; 0</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2024-06-03T11:16:24.834153" elapsed="0.000359"/>
+<status status="PASS" start="2024-06-03T11:22:07.164068" elapsed="0.000324"/>
 </kw>
 <kw name="Get WebElements" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:24.840046" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="5996fb3a9866a0af6112b08f97a6bb16", element="f.46E344BEEEEB18ABE2F421308D414FE5.d.BD194CC4C42FF3884692BF23FED3EAD8.e.298")&gt;]</msg>
+<msg time="2024-06-03T11:22:07.170146" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="352609bc95c7d1438ee0d4e7c3921fb9", element="f.C05F574DF8B57A782BD4868BBB6B2BAB.d.46B829EBB4B025F79BB59C557BFE1E8D.e.298")&gt;]</msg>
 <var>${children}</var>
 <arg>${CHILD_ELEMENT}</arg>
 <doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:24.834673" elapsed="0.005495"/>
+<status status="PASS" start="2024-06-03T11:22:07.164542" elapsed="0.005740"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:24.845602" level="INFO">Element '&lt;selenium.webdriver.remote.webelement.WebElement (session="5996fb3a9866a0af6112b08f97a6bb16", element="f.46E344BEEEEB18ABE2F421308D414FE5.d.BD194CC4C42FF3884692BF23FED3EAD8.e.298")&gt;' is displayed.</msg>
+<msg time="2024-06-03T11:22:07.176840" level="INFO">Element '&lt;selenium.webdriver.remote.webelement.WebElement (session="352609bc95c7d1438ee0d4e7c3921fb9", element="f.C05F574DF8B57A782BD4868BBB6B2BAB.d.46B829EBB4B025F79BB59C557BFE1E8D.e.298")&gt;' is displayed.</msg>
 <arg>${child}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-03T11:16:24.840741" elapsed="0.005028"/>
+<status status="PASS" start="2024-06-03T11:22:07.170878" elapsed="0.006128"/>
 </kw>
-<var name="${child}">&lt;selenium.webdriver.remote.webelement.WebElement (session="5996fb3a9866a0af6112b08f97a6bb16", element="f.46E344BEEEEB18ABE2F421308D414FE5.d.BD194CC4C42FF3884692BF23FED3EAD8.e.298")&gt;</var>
-<status status="PASS" start="2024-06-03T11:16:24.840570" elapsed="0.005318"/>
+<var name="${child}">&lt;selenium.webdriver.remote.webelement.WebElement (session="352609bc95c7d1438ee0d4e7c3921fb9", element="f.C05F574DF8B57A782BD4868BBB6B2BAB.d.46B829EBB4B025F79BB59C557BFE1E8D.e.298")&gt;</var>
+<status status="PASS" start="2024-06-03T11:22:07.170696" elapsed="0.006437"/>
 </iter>
 <var>${child}</var>
 <value>@{children}</value>
-<status status="PASS" start="2024-06-03T11:16:24.840318" elapsed="0.005640"/>
+<status status="PASS" start="2024-06-03T11:22:07.170426" elapsed="0.006775"/>
 </for>
-<status status="PASS" start="2024-06-03T11:16:23.670066" elapsed="1.175986"/>
+<status status="PASS" start="2024-06-03T11:22:05.932250" elapsed="1.245047"/>
 </kw>
-<kw name="Check the Accessories &gt; Home accessories">
+<kw name="Check the Accessories &gt; Home accessories" owner="menu_items">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:24.847182" level="INFO">Clicking element '//div[@id="_desktop_logo"]'.</msg>
+<msg time="2024-06-03T11:22:07.178326" level="INFO">Clicking element '//div[@id="_desktop_logo"]'.</msg>
 <arg>${main_logo_in_the_header}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:24.846758" elapsed="0.473151"/>
+<status status="PASS" start="2024-06-03T11:22:07.178059" elapsed="0.438515"/>
 </kw>
 <kw name="Mouse Over" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:25.320524" level="INFO">Simulating Mouse Over on element '//li[@id="category-6"]'.</msg>
+<msg time="2024-06-03T11:22:07.617288" level="INFO">Simulating Mouse Over on element '//li[@id="category-6"]'.</msg>
 <arg>${drop_down_menu_accessories}</arg>
 <doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:25.320157" elapsed="0.267413"/>
+<status status="PASS" start="2024-06-03T11:22:07.616823" elapsed="0.276929"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${drop_menu_items_home_accessories}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-03T11:16:25.587835" elapsed="0.010351"/>
+<status status="PASS" start="2024-06-03T11:22:07.894029" elapsed="0.012556"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:25.598684" level="INFO">Clicking element '//a[@class="dropdown-item dropdown-submenu" and contains(text(), "Home Accessories")]'.</msg>
+<msg time="2024-06-03T11:22:07.907097" level="INFO">Clicking element '//a[@class="dropdown-item dropdown-submenu" and contains(text(), "Home Accessories")]'.</msg>
 <arg>${drop_menu_items_home_accessories}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:25.598399" elapsed="0.464373"/>
+<status status="PASS" start="2024-06-03T11:22:07.906801" elapsed="0.366691"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${header_of_accessories_home_accessories}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-03T11:16:26.063016" elapsed="0.017742"/>
+<status status="PASS" start="2024-06-03T11:22:08.273735" elapsed="0.050221"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:26.086219" level="INFO">Current page contains element '//p[contains(text(), "Filter By")]'.</msg>
+<msg time="2024-06-03T11:22:08.329498" level="INFO">Current page contains element '//p[contains(text(), "Filter By")]'.</msg>
 <arg>${filter_by_block}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-06-03T11:16:26.080973" elapsed="0.005407"/>
+<status status="PASS" start="2024-06-03T11:22:08.324173" elapsed="0.005500"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:26.097500" level="INFO">Element '//section[@id="products"]' is displayed.</msg>
+<msg time="2024-06-03T11:22:08.340338" level="INFO">Element '//section[@id="products"]' is displayed.</msg>
 <arg>${PRODUCTS}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-03T11:16:26.086576" elapsed="0.011085"/>
+<status status="PASS" start="2024-06-03T11:22:08.329885" elapsed="0.010615"/>
 </kw>
 <kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:26.103121" level="INFO">${children_count} = 1</msg>
+<msg time="2024-06-03T11:22:08.346049" level="INFO">${children_count} = 1</msg>
 <var>${children_count}</var>
 <arg>${CHILD_ELEMENT}</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:26.097859" elapsed="0.005378"/>
+<status status="PASS" start="2024-06-03T11:22:08.340697" elapsed="0.005470"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
 <arg>${children_count} &gt; 0</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2024-06-03T11:16:26.103434" elapsed="0.000316"/>
+<status status="PASS" start="2024-06-03T11:22:08.346365" elapsed="0.000360"/>
 </kw>
 <kw name="Get WebElements" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:26.109812" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="5996fb3a9866a0af6112b08f97a6bb16", element="f.46E344BEEEEB18ABE2F421308D414FE5.d.61D2AF6B73BD68A1269DEE1D2463AF07.e.347")&gt;]</msg>
+<msg time="2024-06-03T11:22:08.352400" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="352609bc95c7d1438ee0d4e7c3921fb9", element="f.C05F574DF8B57A782BD4868BBB6B2BAB.d.D1E0083CEB09CAD580FB2572E2A7C5C8.e.347")&gt;]</msg>
 <var>${children}</var>
 <arg>${CHILD_ELEMENT}</arg>
 <doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:26.103896" elapsed="0.006068"/>
+<status status="PASS" start="2024-06-03T11:22:08.347043" elapsed="0.005481"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:26.115383" level="INFO">Element '&lt;selenium.webdriver.remote.webelement.WebElement (session="5996fb3a9866a0af6112b08f97a6bb16", element="f.46E344BEEEEB18ABE2F421308D414FE5.d.61D2AF6B73BD68A1269DEE1D2463AF07.e.347")&gt;' is displayed.</msg>
+<msg time="2024-06-03T11:22:08.357756" level="INFO">Element '&lt;selenium.webdriver.remote.webelement.WebElement (session="352609bc95c7d1438ee0d4e7c3921fb9", element="f.C05F574DF8B57A782BD4868BBB6B2BAB.d.D1E0083CEB09CAD580FB2572E2A7C5C8.e.347")&gt;' is displayed.</msg>
 <arg>${child}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-03T11:16:26.110550" elapsed="0.005000"/>
+<status status="PASS" start="2024-06-03T11:22:08.353068" elapsed="0.004853"/>
 </kw>
-<var name="${child}">&lt;selenium.webdriver.remote.webelement.WebElement (session="5996fb3a9866a0af6112b08f97a6bb16", element="f.46E344BEEEEB18ABE2F421308D414FE5.d.61D2AF6B73BD68A1269DEE1D2463AF07.e.347")&gt;</var>
-<status status="PASS" start="2024-06-03T11:16:26.110385" elapsed="0.005289"/>
+<var name="${child}">&lt;selenium.webdriver.remote.webelement.WebElement (session="352609bc95c7d1438ee0d4e7c3921fb9", element="f.C05F574DF8B57A782BD4868BBB6B2BAB.d.D1E0083CEB09CAD580FB2572E2A7C5C8.e.347")&gt;</var>
+<status status="PASS" start="2024-06-03T11:22:08.352918" elapsed="0.005124"/>
 </iter>
 <var>${child}</var>
 <value>@{children}</value>
-<status status="PASS" start="2024-06-03T11:16:26.110130" elapsed="0.005624"/>
+<status status="PASS" start="2024-06-03T11:22:08.352671" elapsed="0.005443"/>
 </for>
-<status status="PASS" start="2024-06-03T11:16:24.846380" elapsed="1.269472"/>
+<status status="PASS" start="2024-06-03T11:22:07.177673" elapsed="1.180538"/>
 </kw>
-<kw name="Check the Accessories menu and both Stationery and Home Accessories pages">
+<kw name="Check the Accessories menu and both Stationery and Home Accessories pages" owner="menu_items">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:26.116775" level="INFO">Clicking element '//div[@id="_desktop_logo"]'.</msg>
+<msg time="2024-06-03T11:22:08.359232" level="INFO">Clicking element '//div[@id="_desktop_logo"]'.</msg>
 <arg>${main_logo_in_the_header}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:26.116513" elapsed="0.461211"/>
+<status status="PASS" start="2024-06-03T11:22:08.358955" elapsed="0.397151"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:26.579708" level="INFO">Clicking element '//li[@id="category-6"]'.</msg>
+<msg time="2024-06-03T11:22:08.756879" level="INFO">Clicking element '//li[@id="category-6"]'.</msg>
 <arg>${drop_down_menu_accessories}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:26.578371" elapsed="0.496161"/>
+<status status="PASS" start="2024-06-03T11:22:08.756391" elapsed="0.509908"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:27.085813" level="INFO">Current page contains element '//ul[@ class="category-sub-menu"]//a[contains(text(), "Stationery")]'.</msg>
+<msg time="2024-06-03T11:22:09.277621" level="INFO">Current page contains element '//ul[@ class="category-sub-menu"]//a[contains(text(), "Stationery")]'.</msg>
 <arg>${accessories_menu_stationery}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-06-03T11:16:27.074873" elapsed="0.011693"/>
+<status status="PASS" start="2024-06-03T11:22:09.266530" elapsed="0.011292"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:27.102379" level="INFO">Current page contains element '//ul[@ class="category-sub-menu"]//a[contains(text(), "Home Accessories")]'.</msg>
+<msg time="2024-06-03T11:22:09.288783" level="INFO">Current page contains element '//ul[@ class="category-sub-menu"]//a[contains(text(), "Home Accessories")]'.</msg>
 <arg>${accessories_menu_home_accessories}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-06-03T11:16:27.087151" elapsed="0.015395"/>
+<status status="PASS" start="2024-06-03T11:22:09.278039" elapsed="0.011133"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:27.109175" level="INFO">Current page contains element '//p[contains(text(), "Filter By")]'.</msg>
+<msg time="2024-06-03T11:22:09.300147" level="INFO">Current page contains element '//p[contains(text(), "Filter By")]'.</msg>
 <arg>${filter_by_block}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-06-03T11:16:27.102744" elapsed="0.006619"/>
+<status status="PASS" start="2024-06-03T11:22:09.289567" elapsed="0.010744"/>
 </kw>
-<status status="PASS" start="2024-06-03T11:16:26.116141" elapsed="0.993379"/>
+<status status="PASS" start="2024-06-03T11:22:08.358549" elapsed="0.941915"/>
 </kw>
-<kw name="Check the Art - menu">
+<kw name="Check the Art - menu" owner="menu_items">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:27.110509" level="INFO">Clicking element '//div[@id="_desktop_logo"]'.</msg>
+<msg time="2024-06-03T11:22:09.302705" level="INFO">Clicking element '//div[@id="_desktop_logo"]'.</msg>
 <arg>${main_logo_in_the_header}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:27.110208" elapsed="0.477078"/>
+<status status="PASS" start="2024-06-03T11:22:09.301968" elapsed="0.574356"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${menu_art}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-03T11:16:27.587551" elapsed="0.022374"/>
+<status status="PASS" start="2024-06-03T11:22:09.876564" elapsed="0.015268"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:27.610542" level="INFO">Clicking element '//li[@id="category-9"]'.</msg>
+<msg time="2024-06-03T11:22:09.892384" level="INFO">Clicking element '//li[@id="category-9"]'.</msg>
 <arg>${menu_art}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:27.610211" elapsed="0.326799"/>
+<status status="PASS" start="2024-06-03T11:22:09.892077" elapsed="0.513387"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${header_of_art}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-03T11:16:27.937306" elapsed="0.050516"/>
+<status status="PASS" start="2024-06-03T11:22:10.405728" elapsed="0.017930"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:27.996051" level="INFO">Current page contains element '//p[contains(text(), "Filter By")]'.</msg>
+<msg time="2024-06-03T11:22:10.434554" level="INFO">Current page contains element '//p[contains(text(), "Filter By")]'.</msg>
 <arg>${filter_by_block}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-06-03T11:16:27.988733" elapsed="0.007497"/>
+<status status="PASS" start="2024-06-03T11:22:10.424361" elapsed="0.010356"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:28.006919" level="INFO">Element '//section[@id="products"]' is displayed.</msg>
+<msg time="2024-06-03T11:22:10.445352" level="INFO">Element '//section[@id="products"]' is displayed.</msg>
 <arg>${PRODUCTS}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-03T11:16:27.996437" elapsed="0.010663"/>
+<status status="PASS" start="2024-06-03T11:22:10.434923" elapsed="0.010590"/>
 </kw>
 <kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:28.012957" level="INFO">${children_count} = 1</msg>
+<msg time="2024-06-03T11:22:10.451189" level="INFO">${children_count} = 1</msg>
 <var>${children_count}</var>
 <arg>${CHILD_ELEMENT}</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:28.007311" elapsed="0.005790"/>
+<status status="PASS" start="2024-06-03T11:22:10.445712" elapsed="0.005593"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
 <arg>${children_count} &gt; 0</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2024-06-03T11:16:28.013324" elapsed="0.000349"/>
+<status status="PASS" start="2024-06-03T11:22:10.451505" elapsed="0.000318"/>
 </kw>
 <kw name="Get WebElements" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:28.019596" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="5996fb3a9866a0af6112b08f97a6bb16", element="f.46E344BEEEEB18ABE2F421308D414FE5.d.6217CB8C05C5A1827351CBA0DE698A1A.e.450")&gt;]</msg>
+<msg time="2024-06-03T11:22:10.457397" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="352609bc95c7d1438ee0d4e7c3921fb9", element="f.C05F574DF8B57A782BD4868BBB6B2BAB.d.FB41D9619EF74829B4F26C0F310B7CAF.e.450")&gt;]</msg>
 <var>${children}</var>
 <arg>${CHILD_ELEMENT}</arg>
 <doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:28.013826" elapsed="0.005913"/>
+<status status="PASS" start="2024-06-03T11:22:10.451968" elapsed="0.005554"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:28.025206" level="INFO">Element '&lt;selenium.webdriver.remote.webelement.WebElement (session="5996fb3a9866a0af6112b08f97a6bb16", element="f.46E344BEEEEB18ABE2F421308D414FE5.d.6217CB8C05C5A1827351CBA0DE698A1A.e.450")&gt;' is displayed.</msg>
+<msg time="2024-06-03T11:22:10.462897" level="INFO">Element '&lt;selenium.webdriver.remote.webelement.WebElement (session="352609bc95c7d1438ee0d4e7c3921fb9", element="f.C05F574DF8B57A782BD4868BBB6B2BAB.d.FB41D9619EF74829B4F26C0F310B7CAF.e.450")&gt;' is displayed.</msg>
 <arg>${child}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-03T11:16:28.020357" elapsed="0.005015"/>
+<status status="PASS" start="2024-06-03T11:22:10.458109" elapsed="0.004952"/>
 </kw>
-<var name="${child}">&lt;selenium.webdriver.remote.webelement.WebElement (session="5996fb3a9866a0af6112b08f97a6bb16", element="f.46E344BEEEEB18ABE2F421308D414FE5.d.6217CB8C05C5A1827351CBA0DE698A1A.e.450")&gt;</var>
-<status status="PASS" start="2024-06-03T11:16:28.020176" elapsed="0.005317"/>
+<var name="${child}">&lt;selenium.webdriver.remote.webelement.WebElement (session="352609bc95c7d1438ee0d4e7c3921fb9", element="f.C05F574DF8B57A782BD4868BBB6B2BAB.d.FB41D9619EF74829B4F26C0F310B7CAF.e.450")&gt;</var>
+<status status="PASS" start="2024-06-03T11:22:10.457931" elapsed="0.005249"/>
 </iter>
 <var>${child}</var>
 <value>@{children}</value>
-<status status="PASS" start="2024-06-03T11:16:28.019903" elapsed="0.005658"/>
+<status status="PASS" start="2024-06-03T11:22:10.457665" elapsed="0.005581"/>
 </for>
-<status status="PASS" start="2024-06-03T11:16:27.109855" elapsed="0.915801"/>
+<status status="PASS" start="2024-06-03T11:22:09.300869" elapsed="1.162466"/>
 </kw>
 <kw name="Log out from Your account page" owner="login_logout">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:28.026573" level="INFO">Clicking element '//span[contains(text(), "Polteq Tester")]'.</msg>
+<msg time="2024-06-03T11:22:10.464313" level="INFO">Clicking element '//span[contains(text(), "Polteq Tester")]'.</msg>
 <arg>${go_to_your_account}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:28.026313" elapsed="0.202913"/>
+<status status="PASS" start="2024-06-03T11:22:10.464061" elapsed="0.204409"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-03T11:16:28.229746" level="INFO">Clicking element '//a[contains(text(), "Sign out")]'.</msg>
+<msg time="2024-06-03T11:22:10.669016" level="INFO">Clicking element '//a[contains(text(), "Sign out")]'.</msg>
 <arg>//a[contains(text(), "Sign out")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-03T11:16:28.229454" elapsed="0.351958"/>
+<status status="PASS" start="2024-06-03T11:22:10.668752" elapsed="0.331335"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${header_page_of_autorisation}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-03T11:16:28.581654" elapsed="0.025957"/>
+<status status="PASS" start="2024-06-03T11:22:11.000302" elapsed="0.017005"/>
 </kw>
-<status status="PASS" start="2024-06-03T11:16:28.025942" elapsed="0.581830"/>
+<status status="PASS" start="2024-06-03T11:22:10.463685" elapsed="0.553786"/>
 </kw>
 <kw name="Close Page" owner="main" type="TEARDOWN">
 <kw name="Delete All Cookies" owner="SeleniumLibrary">
 <doc>Deletes all cookies.</doc>
-<status status="PASS" start="2024-06-03T11:16:28.608512" elapsed="0.012241"/>
+<status status="PASS" start="2024-06-03T11:22:11.018137" elapsed="0.009428"/>
 </kw>
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2024-06-03T11:16:28.621020" elapsed="0.142630"/>
+<status status="PASS" start="2024-06-03T11:22:11.027804" elapsed="0.167481"/>
 </kw>
-<status status="PASS" start="2024-06-03T11:16:28.608184" elapsed="0.155745"/>
+<status status="PASS" start="2024-06-03T11:22:11.017817" elapsed="0.177722"/>
 </kw>
-<status status="PASS" start="2024-06-03T11:16:14.443488" elapsed="14.320875"/>
+<status status="PASS" start="2024-06-03T11:21:54.898204" elapsed="16.297589"/>
 </test>
 <doc>This is tests for Check the availability of pages and menu elements, as well as the operation (redirection) of menu elements.</doc>
-<status status="PASS" start="2024-06-03T11:16:14.288019" elapsed="14.478745"/>
+<status status="PASS" start="2024-06-03T11:21:54.738798" elapsed="16.458104"/>
 </suite>
-<status status="PASS" start="2024-06-03T11:16:14.286152" elapsed="14.482517"/>
+<status status="PASS" start="2024-06-03T11:21:54.736508" elapsed="16.461655"/>
 </suite>
-<status status="PASS" start="2024-06-03T11:16:14.263769" elapsed="14.505970"/>
+<status status="PASS" start="2024-06-03T11:21:54.715755" elapsed="16.483246"/>
 </suite>
 <statistics>
 <total>
