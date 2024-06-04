@@ -34,3 +34,5 @@ ${drop_menu_items_stationery}          //a[@class="dropdown-item dropdown-submen
 ${drop_menu_items_home_accessories}        //a[@class="dropdown-item dropdown-submenu" and contains(text(), "Home Accessories")]
 #  For Art_menu
 ${menu_art}    //li[@id="category-9"]
+#  For Search field
+${search_field}    //input[@type="text"]

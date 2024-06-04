@@ -3,7 +3,7 @@
 Documentation    This is first test
 Library     SeleniumLibrary
 Resource    ../main.resource
-Resource    ../tests/login_logout.resource
+Resource    ../tests/resources_pages/login_logout.resource
 Variables   ../variables.py
 
 Test Setup            main.Open Page     web_page=https://testshop.polteq-testing.com/

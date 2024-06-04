@@ -1,6 +1,6 @@
 *** Settings ***
 
-Documentation    This is resource file for menu_items tests. 
+Documentation    This is resource file for menu_items tests. Plus check that search field avaliable.
 Library    SeleniumLibrary
 Resource    ../main.resource
 Variables   ../variables.py
@@ -10,6 +10,7 @@ Variables   ../variables.py
 
 Check the Clothes menu and Clothes > sub-menus
     Click Element    ${main_logo_in_the_header}
+    Page Should Contain Element    ${search_field}
     Mouse Over    ${drop_down_menu_clothes}
     Wait Until Element Is Visible    ${submenu_drop_down_menu_clothes_men}
     
@@ -19,6 +20,7 @@ Check the Clothes menu and Clothes > sub-menus
     # Check that Men section is visible
     Click Element    ${submenu_drop_down_menu_clothes_men}
     Wait Until Element Is Visible    ${header_of_men_clothes_men}
+    Page Should Contain Element    ${search_field}
     Page Should Contain Element    ${filter_by_block}
 
     # Check that Men contains products and each of there are avaliable:
@@ -37,6 +39,7 @@ Check the Clothes > Women sub-menu
 
     Click Element    ${drop_menu_items_women}
     Wait Until Element Is Visible    ${header_of_menu_clothes_women}
+    Page Should Contain Element    ${search_field}
     Page Should Contain Element    ${filter_by_block}
 
     # Check that Women contains products and each of there are avaliable:
@@ -53,7 +56,8 @@ Check the Clothes menu and both Men and Women pages
     Click Element   ${drop_down_menu_clothes}
 
     Page Should Contain Element  ${clothes_menu_men}
-    Page Should Contain Element    ${clothes_menu_women}  
+    Page Should Contain Element    ${clothes_menu_women}
+    Page Should Contain Element    ${search_field}  
     Page Should Contain Element    ${filter_by_block}
 
 Check the Accessories menu and Accessories > sub-menus
@@ -67,6 +71,7 @@ Check the Accessories menu and Accessories > sub-menus
      # Check that Stationary section is visible
     Click Element    ${drop_menu_items_stationery}
     Wait Until Element Is Visible    ${header_of_accessories_stationery}
+    Page Should Contain Element    ${search_field}
     Page Should Contain Element    ${filter_by_block}
     
     # Check that Stationery contains products and each of there are avaliable:
@@ -84,7 +89,8 @@ Check the Accessories > Home accessories
     Wait Until Element Is Visible    ${drop_menu_items_home_accessories} 
 
     Click Element    ${drop_menu_items_home_accessories} 
-    Wait Until Element Is Visible    ${header_of_accessories_home_accessories} 
+    Wait Until Element Is Visible    ${header_of_accessories_home_accessories}
+    Page Should Contain Element    ${search_field} 
     Page Should Contain Element    ${filter_by_block}
 
     # Check that Home Accessories contains products and each of there are avaliable:
@@ -101,7 +107,8 @@ Check the Accessories menu and both Stationery and Home Accessories pages
     Click Element   ${drop_down_menu_accessories}
 
     Page Should Contain Element  ${accessories_menu_stationery} 
-    Page Should Contain Element    ${accessories_menu_home_accessories} 
+    Page Should Contain Element    ${accessories_menu_home_accessories}
+    Page Should Contain Element    ${search_field} 
     Page Should Contain Element    ${filter_by_block}
 
 Check the Art - menu
@@ -109,7 +116,8 @@ Check the Art - menu
     Wait Until Element Is Visible    ${menu_art}
 
     Click Element   ${menu_art} 
-    Wait Until Element Is Visible    ${header_of_art} 
+    Wait Until Element Is Visible    ${header_of_art}
+    Page Should Contain Element    ${search_field} 
     Page Should Contain Element    ${filter_by_block}
 
     # Check that Art contains products and each of there are avaliable:
