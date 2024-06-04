@@ -1,185 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.11.2 on darwin)" generated="2024-06-04T11:11:16.168808" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.11.2 on darwin)" generated="2024-06-04T11:19:33.256766" rpa="false" schemaversion="5">
 <suite id="s1" name="RFW Polteq WebShop Lashin" source="/Users/vl/Git/RFW_Polteq_WebShop_Lashin">
 <suite id="s1-s1" name="Tests" source="/Users/vl/Git/RFW_Polteq_WebShop_Lashin/tests">
 <suite id="s1-s1-s1" name="Search Field" source="/Users/vl/Git/RFW_Polteq_WebShop_Lashin/tests/search_field.robot">
 <test id="s1-s1-s1-t1" name="First test" line="16">
 <kw name="Open Page" owner="main" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-04T11:11:16.354727" level="INFO">Opening browser 'chrome' to base url 'https://testshop.polteq-testing.com/'.</msg>
+<msg time="2024-06-04T11:19:33.438284" level="INFO">Opening browser 'chrome' to base url 'https://testshop.polteq-testing.com/'.</msg>
 <arg>${web_page}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-04T11:11:16.354406" elapsed="6.855292"/>
+<status status="PASS" start="2024-06-04T11:19:33.437690" elapsed="4.500495"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-06-04T11:11:23.210417" elapsed="0.425344"/>
+<status status="PASS" start="2024-06-04T11:19:37.938989" elapsed="0.411400"/>
 </kw>
 <arg>web_page=https://testshop.polteq-testing.com/</arg>
-<status status="PASS" start="2024-06-04T11:11:16.353620" elapsed="7.282361"/>
+<status status="PASS" start="2024-06-04T11:19:33.436575" elapsed="4.915796"/>
 </kw>
 <kw name="Log in from main page" owner="login_logout">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-04T11:11:23.638058" level="INFO">Clicking element '//div[@id="_desktop_user_info"]'.</msg>
+<msg time="2024-06-04T11:19:38.355546" level="INFO">Clicking element '//div[@id="_desktop_user_info"]'.</msg>
 <arg>${sign_in_main_page}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T11:11:23.637046" elapsed="0.647712"/>
+<status status="PASS" start="2024-06-04T11:19:38.354899" elapsed="0.642121"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${header_page_of_autorisation}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-04T11:11:24.285069" elapsed="0.020831"/>
+<status status="PASS" start="2024-06-04T11:19:38.997313" elapsed="0.043177"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-04T11:11:24.306470" level="INFO">Clicking element '//div[@class="col-md-6"]/input[@type="email"]' with clear.</msg>
+<msg time="2024-06-04T11:19:39.041076" level="INFO">Clicking element '//div[@class="col-md-6"]/input[@type="email"]' with clear.</msg>
 <arg>${email_field_autorisation}</arg>
 <arg>clear</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T11:11:24.306140" elapsed="0.308212"/>
+<status status="PASS" start="2024-06-04T11:19:39.040725" elapsed="0.286962"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-04T11:11:24.615239" level="INFO">Typing text 'tester@test.com' into text field '//div[@class="col-md-6"]/input[@type="email"]'.</msg>
+<msg time="2024-06-04T11:19:39.328478" level="INFO">Typing text 'tester@test.com' into text field '//div[@class="col-md-6"]/input[@type="email"]'.</msg>
 <arg>${email_field_autorisation}</arg>
 <arg>${LOGIN}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T11:11:24.614707" elapsed="0.160930"/>
+<status status="PASS" start="2024-06-04T11:19:39.327996" elapsed="0.152180"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-04T11:11:24.777388" level="INFO">Clicking element '//input[@type="password"]' with clear.</msg>
+<msg time="2024-06-04T11:19:39.480749" level="INFO">Clicking element '//input[@type="password"]' with clear.</msg>
 <arg>${password_field_autorisation}</arg>
 <arg>clear</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T11:11:24.776132" elapsed="0.293424"/>
+<status status="PASS" start="2024-06-04T11:19:39.480407" elapsed="0.284563"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2024-06-04T11:11:25.070149" level="INFO">Typing password into text field '//input[@type="password"]'.</msg>
-<msg time="2024-06-04T11:11:25.095866" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2024-06-04T11:19:39.765845" level="INFO">Typing password into text field '//input[@type="password"]'.</msg>
+<msg time="2024-06-04T11:19:39.794093" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${password_field_autorisation}</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T11:11:25.069807" elapsed="0.047917"/>
+<status status="PASS" start="2024-06-04T11:19:39.765235" elapsed="0.047433"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-06-04T11:11:25.118229" level="INFO">Clicking button '//button[@id="submit-login"]'.</msg>
+<msg time="2024-06-04T11:19:39.813185" level="INFO">Clicking button '//button[@id="submit-login"]'.</msg>
 <arg>${button_sighn_in_form_of_autorisation}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T11:11:25.117955" elapsed="1.166928"/>
+<status status="PASS" start="2024-06-04T11:19:39.812894" elapsed="1.075885"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${header_page_witch_autorased}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-04T11:11:26.285499" elapsed="0.019400"/>
+<status status="PASS" start="2024-06-04T11:19:40.889104" elapsed="0.018496"/>
 </kw>
-<status status="PASS" start="2024-06-04T11:11:23.636431" elapsed="2.668641"/>
+<status status="PASS" start="2024-06-04T11:19:38.354098" elapsed="2.553862"/>
 </kw>
 <kw name="Positive test of search result" owner="search_field">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-04T11:11:26.305920" level="INFO">Clicking element '//div[@id="_desktop_logo"]'.</msg>
+<msg time="2024-06-04T11:19:40.909627" level="INFO">Clicking element '//div[@id="_desktop_logo"]'.</msg>
 <arg>${main_logo_in_the_header}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T11:11:26.305681" elapsed="1.244924"/>
+<status status="PASS" start="2024-06-04T11:19:40.909061" elapsed="1.201726"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-06-04T11:11:27.577895" level="INFO">Current page contains element '//input[@type="text"]'.</msg>
+<msg time="2024-06-04T11:19:42.124001" level="INFO">Current page contains element '//input[@type="text"]'.</msg>
 <arg>${search_field}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-06-04T11:11:27.550898" elapsed="0.027236"/>
+<status status="PASS" start="2024-06-04T11:19:42.111374" elapsed="0.012796"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-04T11:11:27.578712" level="INFO">Clicking element '//input[@type="text"]' with clear.</msg>
+<msg time="2024-06-04T11:19:42.124741" level="INFO">Clicking element '//input[@type="text"]' with clear.</msg>
 <arg>${search_field}</arg>
 <arg>clear</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T11:11:27.578375" elapsed="0.277225"/>
+<status status="PASS" start="2024-06-04T11:19:42.124376" elapsed="0.282234"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-04T11:11:27.856150" level="INFO">Typing text 'SWEATER' into text field '//input[@type="text"]'.</msg>
+<msg time="2024-06-04T11:19:42.407141" level="INFO">Typing text 'SWEATER' into text field '//input[@type="text"]'.</msg>
 <arg>${search_field}</arg>
 <arg>SWEATER</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T11:11:27.855826" elapsed="0.050609"/>
+<status status="PASS" start="2024-06-04T11:19:42.406832" elapsed="0.048792"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-04T11:11:27.907030" level="INFO">Clicking element '//button[@type="submit"]'.</msg>
+<msg time="2024-06-04T11:19:42.456179" level="INFO">Clicking element '//button[@type="submit"]'.</msg>
 <arg>${button_search_submit}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T11:11:27.906693" elapsed="0.834408"/>
+<status status="PASS" start="2024-06-04T11:19:42.455848" elapsed="0.742522"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${items_search_results}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-04T11:11:28.741507" elapsed="0.021099"/>
+<status status="PASS" start="2024-06-04T11:19:43.198623" elapsed="0.020391"/>
 </kw>
-<status status="PASS" start="2024-06-04T11:11:26.305337" elapsed="2.457560"/>
+<status status="PASS" start="2024-06-04T11:19:40.908419" elapsed="2.311151"/>
 </kw>
 <kw name="Negative test of search result" owner="search_field">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-04T11:11:28.769553" level="INFO">Clicking element '//input[@type="text"]' with clear.</msg>
+<msg time="2024-06-04T11:19:43.221235" level="INFO">Clicking element '//input[@type="text"]' with clear.</msg>
 <arg>${search_field}</arg>
 <arg>clear</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T11:11:28.767992" elapsed="0.301069"/>
+<status status="PASS" start="2024-06-04T11:19:43.220633" elapsed="0.287211"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-04T11:11:29.069739" level="INFO">Typing text '$%^&amp;' into text field '//input[@type="text"]'.</msg>
+<msg time="2024-06-04T11:19:43.508569" level="INFO">Typing text '$%^&amp;' into text field '//input[@type="text"]'.</msg>
 <arg>${search_field}</arg>
 <arg>$%^&amp;</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T11:11:29.069362" elapsed="0.068535"/>
+<status status="PASS" start="2024-06-04T11:19:43.508148" elapsed="0.061344"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-04T11:11:29.138564" level="INFO">Clicking element '//button[@type="submit"]'.</msg>
+<msg time="2024-06-04T11:19:43.570902" level="INFO">Clicking element '//button[@type="submit"]'.</msg>
 <arg>${button_search_submit}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T11:11:29.138204" elapsed="0.484683"/>
+<status status="PASS" start="2024-06-04T11:19:43.570096" elapsed="0.536552"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${error_search_message}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-04T11:11:29.623129" elapsed="0.016916"/>
+<status status="PASS" start="2024-06-04T11:19:44.106934" elapsed="0.019687"/>
 </kw>
-<status status="PASS" start="2024-06-04T11:11:28.765986" elapsed="0.874277"/>
+<status status="PASS" start="2024-06-04T11:19:43.220174" elapsed="0.906622"/>
 </kw>
 <kw name="Log out from Your account page" owner="login_logout">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-04T11:11:29.641178" level="INFO">Clicking element '//span[contains(text(), "Polteq Tester")]'.</msg>
+<msg time="2024-06-04T11:19:44.127779" level="INFO">Clicking element '//span[contains(text(), "Polteq Tester")]'.</msg>
 <arg>${go_to_your_account}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T11:11:29.640903" elapsed="0.542791"/>
+<status status="PASS" start="2024-06-04T11:19:44.127435" elapsed="0.507095"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-04T11:11:30.184722" level="INFO">Clicking element '//a[contains(text(), "Sign out")]'.</msg>
+<msg time="2024-06-04T11:19:44.636435" level="INFO">Clicking element '//a[contains(text(), "Sign out")]'.</msg>
 <arg>//a[contains(text(), "Sign out")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T11:11:30.184425" elapsed="0.815673"/>
+<status status="PASS" start="2024-06-04T11:19:44.635892" elapsed="0.819254"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${header_page_of_autorisation}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-04T11:11:31.000456" elapsed="0.021923"/>
+<status status="PASS" start="2024-06-04T11:19:45.455372" elapsed="0.017385"/>
 </kw>
-<status status="PASS" start="2024-06-04T11:11:29.640544" elapsed="1.382262"/>
+<status status="PASS" start="2024-06-04T11:19:44.127071" elapsed="1.345879"/>
 </kw>
 <kw name="Close Page" owner="main" type="TEARDOWN">
 <kw name="Delete All Cookies" owner="SeleniumLibrary">
 <doc>Deletes all cookies.</doc>
-<status status="PASS" start="2024-06-04T11:11:31.024344" elapsed="0.012961"/>
+<status status="PASS" start="2024-06-04T11:19:45.473696" elapsed="0.013263"/>
 </kw>
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2024-06-04T11:11:31.037529" elapsed="0.184410"/>
+<status status="PASS" start="2024-06-04T11:19:45.487194" elapsed="0.170326"/>
 </kw>
-<status status="PASS" start="2024-06-04T11:11:31.023903" elapsed="0.198434"/>
+<status status="PASS" start="2024-06-04T11:19:45.473354" elapsed="0.184394"/>
 </kw>
-<status status="PASS" start="2024-06-04T11:11:16.352978" elapsed="14.869671"/>
+<status status="PASS" start="2024-06-04T11:19:33.435756" elapsed="12.222192"/>
 </test>
 <doc>This is positive test of Search_field. Tests for check avaliability of search field on the major pages were realised in menu_itema.robot</doc>
-<status status="PASS" start="2024-06-04T11:11:16.195303" elapsed="15.029142"/>
+<status status="PASS" start="2024-06-04T11:19:33.284343" elapsed="12.374543"/>
 </suite>
-<status status="PASS" start="2024-06-04T11:11:16.193352" elapsed="15.034949"/>
+<status status="PASS" start="2024-06-04T11:19:33.282621" elapsed="12.379434"/>
 </suite>
-<status status="PASS" start="2024-06-04T11:11:16.172215" elapsed="15.058789"/>
+<status status="PASS" start="2024-06-04T11:19:33.261254" elapsed="12.402083"/>
 </suite>
 <statistics>
 <total>
