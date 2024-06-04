@@ -2,8 +2,8 @@
 
 Documentation    This is resource file for menu_items tests. Plus check that search field avaliable.
 Library    SeleniumLibrary
-Resource    ../main.resource
-Variables   ../variables.py
+Resource    ../../main.resource
+Variables   ../../variables.py
 
 
 *** Keywords ***

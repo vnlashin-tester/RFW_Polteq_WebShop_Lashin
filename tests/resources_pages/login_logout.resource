@@ -2,8 +2,8 @@
 
 Documentation    This is resource file for LogIN and LogOut. 
 Library    SeleniumLibrary
-Resource    ../main.resource
-Variables   ../variables.py
+Resource    ../../main.resource
+Variables   ../../variables.py
 
 *** Keywords ***
 
