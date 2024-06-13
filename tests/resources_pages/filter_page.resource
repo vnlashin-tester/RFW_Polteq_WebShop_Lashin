@@ -3,7 +3,9 @@
 Documentation    This is resource file for testing of filter by field. 
 Library    SeleniumLibrary
 Resource    ../../main.resource
+Resource    ../../tests/resources_pages/menu_items.resource
 Variables   ../../variables.py
+
 
 
 
