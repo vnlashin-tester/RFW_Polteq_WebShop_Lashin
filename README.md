@@ -26,7 +26,7 @@ Artefacts can be found on Google Drive.
 
 
 
-![Test Report](https://drive.google.com/file/d/1Hw8Sw07K0l8vCCZizSgHNxVGx3jD0YrK/view?usp=sharing)
+![Test Report](https://drive.google.com/uc?export=view&id=1Hw8Sw07K0l8vCCZizSgHNxVGx3jD0YrK)
 
 - ![Screenshot 3](link_to_screenshot3.jpg)
 
