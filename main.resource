@@ -7,7 +7,7 @@ Library    %{BROWSER_OPTIONS_PATH}
 *** Keywords ***
 
 Open Page 
-    [Arguments]        ${web_page}    ${browser}=browser_options.open_custom_broeser
+    [Arguments]        ${web_page}    ${browser}=browser_options.open_custom_browser
 
     SeleniumLibrary.Open Browser    ${web_page}    ${browser}  
     Maximize Browser Window
