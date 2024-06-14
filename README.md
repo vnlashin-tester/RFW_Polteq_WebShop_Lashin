@@ -11,7 +11,8 @@ Below I am attaching photos and examples of performing autotests.
 
 - **Robot Framework**: A keyword-driven testing framework used for test automation and robotic process automation.
 - **Selenium Library**: Integrated with Robot Framework to interact with web elements for end-to-end testing.
-- **Continuous Integration (CI)**: Implemented with Jenkins for automated test execution on every code commit.
+- **Continuous Integration (CI)**: is a development practice automated where tests are executed on every code commit. This ensures that the code is continuously tested and integrated, catching issues early in the development process.
+  I use GitHub Actions to implement automatic code execution on every push. This setup enhances the CI process by ensuring that code changes are immediately tested and validated, maintaining the stability and quality of the software throughout the development lifecycle.
 - **Behavior-Driven Development (BDD)**: Adopted to improve collaboration between developers, testers, and non-technical stakeholders.
 - **Data-Driven Development (DDD)** is an approach to software development that focuses on using data for creating and testing applications. The main idea is to separate test data from test scripts, allowing for easy modifications and additions of new data without changing the test code. This enhances the flexibility and scalability of testing.
   I use DDD to create tests for sequences of invalid login/password values. This approach allows for easy management of various data sets for testing, ensuring that the system correctly handles all possible combinations of incorrect data. This improves the quality and reliability of the software by ensuring comprehensive test coverage.
