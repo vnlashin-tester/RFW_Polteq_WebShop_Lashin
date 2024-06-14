@@ -27,8 +27,9 @@ Artefacts can be found on Google Drive.
 
 
 ## Project Photos
+- You can view the detailed test report [Test Report] (https://drive.google.com/file/d/1WNQwHI9VilvAoEu538S7DcXXSD8Ti40f/view?usp=drive_link)
 
-![Test Report](https://drive.google.com/file/d/1WNQwHI9VilvAoEu538S7DcXXSD8Ti40f/view?usp=drive_link)
+
 ![Screenshot 2](link_to_screenshot2.jpg)
 ![Screenshot 3](link_to_screenshot3.jpg)
 
