@@ -34,5 +34,5 @@ Artefacts can be found on Google Drive.
 
 ## Project Video
 
-- Мшву (<iframe src="https://drive.google.com/file/d/1PJ2qzt9GrmmSLh_gfbHwnlS_IyGcrJIa/preview" width="640" height="480" allow="autoplay"></iframe>)
+- [Video](<iframe src="https://drive.google.com/file/d/1PJ2qzt9GrmmSLh_gfbHwnlS_IyGcrJIa/preview" width="640" height="480" allow="autoplay"></iframe>)
 
