@@ -8,7 +8,7 @@ Library    SeleniumLibrary
 Open Page 
     [Arguments]        ${web_page}    ${browser}=chrome
     
-    Open Browser    ${web_page}    ${browser}=chrome  options=${HEADLESS_OPTIONS}
+    Open Browser    ${web_page}    ${browser}  options=${HEADLESS_OPTIONS}
     Maximize Browser Window
 
 Close Page
