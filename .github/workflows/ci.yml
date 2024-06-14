@@ -21,17 +21,27 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
-        python-version: '3.12'
-            
+        python-version: '3.x'
 
     - name: Install dependencies
       run: |
+        sudo apt-get update
+        sudo apt-get install -y xvfb
+        sudo apt-get install -y libnss3
+        sudo apt-get install -y google-chrome-stable
+        wget -N https://chromedriver.storage.googleapis.com/113.0.5672.63/chromedriver_linux64.zip
+        unzip chromedriver_linux64.zip
+        sudo mv -f chromedriver /usr/local/share/chromedriver
+        sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
+        sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
         python -m venv .venv
         source .venv/bin/activate
-        pip3 install -r requirements.txt
-        pip3 install isort
+        pip install -r requirements.txt
+        pip install robotframework
+        pip install robotframework-seleniumlibrary
+        pip install robotframework-xvfb
 
     - name: Run tests
       run: |
-        chmod +x run_tests.sh
-        ./run_tests.sh
+        source .venv/bin/activate
+        xvfb-run -a robot --outputdir results tests/
