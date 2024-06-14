@@ -9,7 +9,7 @@ def get_chrome_options():
     chrome_options.add_argument("--disable-dev-shm-usage")
     return chrome_options
 
-def open_browser(url):
+def open_custom_browser(url):
     chrome_options = get_chrome_options()
     driver = webdriver.Chrome(options=chrome_options)
     driver.get(url)
