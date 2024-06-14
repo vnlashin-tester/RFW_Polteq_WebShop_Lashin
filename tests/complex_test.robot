@@ -11,13 +11,11 @@ Test Teardown         main.Close Page
 
 *** Test Cases ***
 
-First case
+Complex test case
     login_logout.Log in from main page
-    Drop Down Menu, add to cart, order
-    # first_page.Log out from Your account page
-    
-    # Confirm that discount banner is avaliable on the page
-    
+    Confirm that discount banner is avaliable on the page
+    Drop Down Menu > Submenu > Product cadrs > Add good to the cart > Order > The Cart
+     
 
 *** Keywords ***
 
@@ -26,7 +24,7 @@ Confirm that discount banner is avaliable on the page
     Wait Until Element Is Visible    ${carousel_on_main_page}
     Page Should Contain Element  ${discount_banner_on_the_main_page}  
 
-Drop Down Menu, add to cart, order
+Drop Down Menu > Submenu > Product cadrs > Add good to the cart > Order > The Cart
     Click Element    ${main_logo_in_the_header}
     Mouse Over    ${drop_down_menu_clothes}
     Wait Until Element Is Visible    ${submenu_drop_down_menu_clothes}
