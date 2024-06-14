@@ -17,6 +17,13 @@ Below I am attaching photos and examples of performing autotests.
 - **Data-Driven Development (DDD)** is an approach to software development that focuses on using data for creating and testing applications. The main idea is to separate test data from test scripts, allowing for easy modifications and additions of new data without changing the test code. This enhances the flexibility and scalability of testing.
   I use DDD to create tests for sequences of invalid login/password values. This approach allows for easy management of various data sets for testing, ensuring that the system correctly handles all possible combinations of incorrect data. This improves the quality and reliability of the software by ensuring comprehensive test coverage.
 
+## Project Artefacts
+Artefacts can be found on Google Drive.
+
+![Test Plan](link_to_screenshot1.jpg)
+![User Storys](link_to_screenshot1.jpg)
+![Check-lists_and_trace_matrix](link_to_screenshot1.jpg)
+
 ## Project Photos
 
 ![Screenshot 1](link_to_screenshot1.jpg)
