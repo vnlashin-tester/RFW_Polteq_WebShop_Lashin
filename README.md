@@ -25,9 +25,11 @@ Artefacts can be found on Google Drive.
 - <a href="https://docs.google.com/spreadsheets/d/1bLJAJp9h3iQc03_BMJ5PXBq2RVoE54kseyUYoxY_feQ/edit?usp=drive_link" target="_blank">Checklists and Trace Matrix</a>
 
 
+## Test Report from Robot Framework
 
 ![Test Report](https://drive.google.com/uc?export=view&id=1Hw8Sw07K0l8vCCZizSgHNxVGx3jD0YrK)
 
+## Project Foto
 - ![Screenshot 3](link_to_screenshot3.jpg)
 
 ## Project Video
