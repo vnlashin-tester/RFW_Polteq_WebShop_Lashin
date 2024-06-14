@@ -20,10 +20,9 @@ Below I am attaching photos and examples of performing autotests.
 ## Project Artefacts
 Artefacts can be found on Google Drive.
 
-- [Test Plan](https://docs.google.com/document/d/1mu7r23lQwvueH1c_ltrmVmpEzFx3lkqlwZ1kSe0A0x4/edit?usp=drive_link)
-- [User Stories](https://docs.google.com/spreadsheets/d/1f4Q8VN6Gufj0R72tmPBWx7tXoL7sAcTbXJKIx3ZEtRk/edit?usp=drive_link)
-- [Checklists and Trace Matrix](https://docs.google.com/spreadsheets/d/1bLJAJp9h3iQc03_BMJ5PXBq2RVoE54kseyUYoxY_feQ/edit?usp=drive_link)
-
+- <a href="https://docs.google.com/document/d/1mu7r23lQwvueH1c_ltrmVmpEzFx3lkqlwZ1kSe0A0x4/edit?usp=drive_link" target="_blank">Test Plan</a>
+- <a href="https://docs.google.com/spreadsheets/d/1f4Q8VN6Gufj0R72tmPBWx7tXoL7sAcTbXJKIx3ZEtRk/edit?usp=drive_link" target="_blank">User Stories</a>
+- <a href="https://docs.google.com/spreadsheets/d/1bLJAJp9h3iQc03_BMJ5PXBq2RVoE54kseyUYoxY_feQ/edit?usp=drive_link" target="_blank">Checklists and Trace Matrix</a>
 ## Project Photos
 
 ![Screenshot 1](link_to_screenshot1.jpg)
