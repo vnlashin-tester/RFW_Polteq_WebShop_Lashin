@@ -7,8 +7,8 @@ Library    %{BROWSER_OPTIONS_PATH}
 *** Keywords ***
 
 Open Page 
-    [Arguments]        ${web_page}    ${browser}=chrome
-    
+    [Arguments]        ${web_page}    ${browser}=browser_options.Open Browser
+        
     Open Browser    ${web_page}    ${browser}  
     Maximize Browser Window
 
