@@ -6,12 +6,20 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    env:
+      ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
 
+    - name: Set up Node.js 20
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
     - name: Set up Python
-      uses: actions/setup-python@v5  # Обновлено до версии, поддерживающей Node.js 20
+      uses: actions/setup-python@v5
       with:
         python-version: '3.x'
 
