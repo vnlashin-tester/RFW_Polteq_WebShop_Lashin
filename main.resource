@@ -19,7 +19,7 @@ Close Page
 *** Variables ***
 
 # General variables that are actual for most pages:
-${HEADLESS_OPTIONS}  headless,disable-gpu,no-sandbox,disable-dev-shm-usage
+${HEADLESS_OPTIONS}  --headless    --disable-gpu    --no-sandbox    --disable-dev-shm-usage
 # Filter_by (each page)
 ${filter_by_block}    //p[contains(text(), "Filter By")]
 # Logo (to the maim_page)
