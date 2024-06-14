@@ -2,13 +2,14 @@
 
 Documentation    In this file are main resources for project
 Library    SeleniumLibrary
+Library    %{BROWSER_OPTIONS_PATH}
 
 *** Keywords ***
 
 Open Page 
     [Arguments]        ${web_page}    ${browser}=chrome
     
-    Open Browser    ${web_page}    ${browser}  options=${HEADLESS_OPTIONS}
+    Open Browser    ${web_page}    ${browser}  
     Maximize Browser Window
 
 Close Page
@@ -19,7 +20,7 @@ Close Page
 *** Variables ***
 
 # General variables that are actual for most pages:
-${HEADLESS_OPTIONS}  --headless    --disable-gpu    --no-sandbox    --disable-dev-shm-usage
+
 # Filter_by (each page)
 ${filter_by_block}    //p[contains(text(), "Filter By")]
 # Logo (to the maim_page)

@@ -41,6 +41,12 @@ jobs:
         pip install robotframework-seleniumlibrary
         pip install robotframework-xvfb
 
+    - name: Set Environment Variables
+      run: echo "BROWSER_OPTIONS_PATH=$(pwd)/browser_options.py" >> $GITHUB_ENV
+
+    - name: Check Chrome Version
+      run: google-chrome --version
+
     - name: Run tests
       run: |
         source .venv/bin/activate
