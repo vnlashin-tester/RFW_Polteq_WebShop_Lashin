@@ -3,4 +3,4 @@
 
 .DS_Store
 .env
-# variables.py
+variables.py
