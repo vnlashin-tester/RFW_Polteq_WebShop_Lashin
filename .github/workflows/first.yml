@@ -33,7 +33,10 @@ jobs:
         pip install -r requirements.txt
         pip install robotframework
         pip install robotframework-seleniumlibrary
-
+    
+    - name: Wait for Selenium to be ready
+      run: sleep 10
+    
     - name: Run complex_test
       run: |
         robot -v BROWSER:chrome -v SELENIUM:localhost:4444/wd/hub -v OPTIONS:"--headless --no-sandbox --disable-dev-shm-usage" tests/complex_test.robot

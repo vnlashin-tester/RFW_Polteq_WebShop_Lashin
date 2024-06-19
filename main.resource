@@ -7,9 +7,9 @@ Library    SeleniumLibrary
 *** Keywords ***
 
 Open Page 
-    [Arguments]        ${web_page}    ${browser}=Chrome
+    [Arguments]        ${web_page}=https://testshop.polteq-testing.com/    ${BROWSER}=chrome    ${SELENIUM}=http://localhost:4444/wd/hub    ${OPTIONS}=--headless --no-sandbox --disable-dev-shm-usage --remote-debugging-port=9222
 
-    SeleniumLibrary.Open Browser    ${web_page}    ${browser}  
+    SeleniumLibrary.Open Browser    ${web_page}    ${BROWSER}  ${SELENIUM}    ${OPTIONS}
     Maximize Browser Window
 
 Close Page
