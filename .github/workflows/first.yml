@@ -1,0 +1,57 @@
+name: Run Robot Framework Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+
+    services:
+      selenium:
+        image: selenium/standalone-chrome
+        ports:
+          - 4444:4444
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install robotframework
+        pip install robotframework-seleniumlibrary
+
+    - name: Run test_cart
+      run: |
+        robot -v BROWSER:chrome -v SELENIUM:localhost:4444/wd/hub tests/test_cart.robot
+
+    - name: Run test_filter_page
+      run: |
+        robot -v BROWSER:chrome -v SELENIUM:localhost:4444/wd/hub tests/test_filter_page.robot
+
+    - name: Run test_login
+      run: |
+        robot -v BROWSER:chrome -v SELENIUM:localhost:4444/wd/hub tests/test_login.robot
+
+    - name: Run test_menu_items
+      run: |
+        robot -v BROWSER:chrome -v SELENIUM:localhost:4444/wd/hub tests/test_menu_items.robot
+
+    - name: Run test_product_card
+      run: |
+        robot -v BROWSER:chrome -v SELENIUM:localhost:4444/wd/hub tests/test_product_card.robot
+
+    - name: Run test_search_field
+      run: |
+        robot -v BROWSER:chrome -v SELENIUM:localhost:4444/wd/hub tests/test_search_field.robot
