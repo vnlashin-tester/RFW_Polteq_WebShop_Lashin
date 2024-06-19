@@ -9,7 +9,7 @@ Library    SeleniumLibrary
 Open Page 
     [Arguments]        ${web_page}=https://testshop.polteq-testing.com    ${browser}=chrome
 
-    SeleniumLibrary.Open Browser  ${web_page}  ${browser}
+    SeleniumLibrary.Open Browser  ${web_page}  ${browser}  
 
     
     Maximize Browser Window
@@ -40,3 +40,4 @@ ${menu_art}    //li[@id="category-9"]
 #  For Search field
 ${search_field}    //input[@type="text"]
 
+${REMOTE_URL}    http://localhost:4444/wd/hub
