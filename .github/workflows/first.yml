@@ -32,26 +32,43 @@ jobs:
         pip install robotframework
         pip install robotframework-seleniumlibrary
 
-    - name: Run test_cart
+    - name: Run test_login_negative
       run: |
-        robot -v BROWSER:chrome -v SELENIUM:localhost:4444/wd/hub tests/test_cart.robot
-
-    - name: Run test_filter_page
+        robot -v BROWSER:chrome -v SELENIUM:localhost:4444/wd/hub tests/login_negative_1.robot
+    
+    - name: Run test_login_positive
       run: |
-        robot -v BROWSER:chrome -v SELENIUM:localhost:4444/wd/hub tests/test_filter_page.robot
-
-    - name: Run test_login
-      run: |
-        robot -v BROWSER:chrome -v SELENIUM:localhost:4444/wd/hub tests/test_login.robot
-
+        robot -v BROWSER:chrome -v SELENIUM:localhost:4444/wd/hub tests/login_positive.robot
+    
     - name: Run test_menu_items
       run: |
-        robot -v BROWSER:chrome -v SELENIUM:localhost:4444/wd/hub tests/test_menu_items.robot
-
-    - name: Run test_product_card
-      run: |
-        robot -v BROWSER:chrome -v SELENIUM:localhost:4444/wd/hub tests/test_product_card.robot
+        robot -v BROWSER:chrome -v SELENIUM:localhost:4444/wd/hub tests/menu_items.robot
 
     - name: Run test_search_field
       run: |
-        robot -v BROWSER:chrome -v SELENIUM:localhost:4444/wd/hub tests/test_search_field.robot
+        robot -v BROWSER:chrome -v SELENIUM:localhost:4444/wd/hub tests/search_field.robot
+   
+   
+    - name: Run test_product_card
+      run: |
+        robot -v BROWSER:chrome -v SELENIUM:localhost:4444/wd/hub tests/product_card.robot
+   
+    - name: Run test_filter_page
+      run: |
+          robot -v BROWSER:chrome -v SELENIUM:localhost:4444/wd/hub tests/filter_page.robot
+   
+    - name: Run test_cart
+      run: |
+        robot -v BROWSER:chrome -v SELENIUM:localhost:4444/wd/hub tests/cart.robot
+
+    - name: Run complex_test
+      run: |
+        robot -v BROWSER:chrome -v SELENIUM:localhost:4444/wd/hub tests/complex_test.robot
+
+
+
+
+ 
+
+
+
