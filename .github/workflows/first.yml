@@ -34,26 +34,8 @@ jobs:
         pip install robotframework
         pip install robotframework-seleniumlibrary
 
-    - name: Run test_cart
+    - name: Run complex_test
       run: |
-        robot -v BROWSER:chrome -v SELENIUM:localhost:4444/wd/hub -v OPTIONS:"--headless --no-sandbox --disable-dev-shm-usage" tests/test_cart.robot
+        robot -v BROWSER:chrome -v SELENIUM:localhost:4444/wd/hub -v OPTIONS:"--headless --no-sandbox --disable-dev-shm-usage" tests/complex_test.robot
 
-    - name: Run test_filter_page
-      run: |
-        robot -v BROWSER:chrome -v SELENIUM:localhost:4444/wd/hub -v OPTIONS:"--headless --no-sandbox --disable-dev-shm-usage" tests/test_filter_page.robot
 
-    - name: Run test_login
-      run: |
-        robot -v BROWSER:chrome -v SELENIUM:localhost:4444/wd/hub -v OPTIONS:"--headless --no-sandbox --disable-dev-shm-usage" tests/test_login.robot
-
-    - name: Run test_menu_items
-      run: |
-        robot -v BROWSER:chrome -v SELENIUM:localhost:4444/wd/hub -v OPTIONS:"--headless --no-sandbox --disable-dev-shm-usage" tests/test_menu_items.robot
-
-    - name: Run test_product_card
-      run: |
-        robot -v BROWSER:chrome -v SELENIUM:localhost:4444/wd/hub -v OPTIONS:"--headless --no-sandbox --disable-dev-shm-usage" tests/test_product_card.robot
-
-    - name: Run test_search_field
-      run: |
-        robot -v BROWSER:chrome -v SELENIUM:localhost:4444/wd/hub -v OPTIONS:"--headless --no-sandbox --disable-dev-shm-usage" tests/test_search_field.robot
