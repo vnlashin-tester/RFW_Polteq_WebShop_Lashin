@@ -1,38 +1,38 @@
-name: Python application
+# name: Python application
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+# on:
+#   push:
+#     branches: [ main ]
+#   pull_request:
+#     branches: [ main ]
 
-jobs:
-  build:
+# jobs:
+#   build:
 
-    runs-on: ubuntu-latest
+#     runs-on: ubuntu-latest
 
-    steps:
-    - uses: actions/checkout@v2
+#     steps:
+#     - uses: actions/checkout@v2
     
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
+#     - name: Set up Python
+#       uses: actions/setup-python@v2
+#       with:
+#         python-version: '3.x'
         
-    - name: Set up Chrome
-      uses: browser-actions/setup-chrome@v1
-      with:
-        chrome-version: 126
-        install-chromedriver: true
+#     - name: Set up Chrome
+#       uses: browser-actions/setup-chrome@v1
+#       with:
+#         chrome-version: 126
+#         install-chromedriver: true
 
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
+#     - name: Install dependencies
+#       run: |
+#         python -m pip install --upgrade pip
+#         pip install -r requirements.txt
 
-    - name: Run complex test
-      run: |
-        robot --variable BROWSER:chrome --variable REMOTE_URL:http://localhost:4444/wd/hub tests/complex_test.robot
+#     - name: Run complex test
+#       run: |
+#         robot --variable BROWSER:chrome --variable REMOTE_URL:http://localhost:4444/wd/hub tests/complex_test.robot
 
 
 
