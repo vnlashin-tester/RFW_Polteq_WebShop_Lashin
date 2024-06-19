@@ -22,7 +22,7 @@ jobs:
     - name: Set up Chrome
       uses: browser-actions/setup-chrome@v1
       with:
-        chrome-version: 1**
+        chrome-version: 126
         install-chromedriver: true
 
     - name: Install dependencies
