@@ -7,9 +7,11 @@ Library    SeleniumLibrary
 *** Keywords ***
 
 Open Page 
-    [Arguments]        ${web_page}=https://testshop.polteq-testing.com/    ${BROWSER}=chrome    ${SELENIUM}=http://localhost:4444/wd/hub    ${OPTIONS}=--headless --no-sandbox --disable-dev-shm-usage --remote-debugging-port=9222
+    [Arguments]        ${web_page}=https://testshop.polteq-testing.com    ${browser}=chrome
 
-    SeleniumLibrary.Open Browser    ${web_page}    ${BROWSER}  ${SELENIUM}    ${OPTIONS}
+    SeleniumLibrary.Open Browser  ${web_page}  ${browser}
+
+    
     Maximize Browser Window
 
 Close Page
@@ -37,3 +39,4 @@ ${drop_menu_items_home_accessories}        //a[@class="dropdown-item dropdown-su
 ${menu_art}    //li[@id="category-9"]
 #  For Search field
 ${search_field}    //input[@type="text"]
+

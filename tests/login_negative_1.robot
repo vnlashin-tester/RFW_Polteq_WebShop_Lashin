@@ -6,7 +6,7 @@ Resource    ../main.resource
 Resource    ../tests/resources_pages/login_logout.resource
 
 
-Test Setup            main.Open Page     web_page=https://testshop.polteq-testing.com/
+Test Setup            main.Open Page     
 Test Teardown         main.Close Page
 
 Test Template    Invalid login template

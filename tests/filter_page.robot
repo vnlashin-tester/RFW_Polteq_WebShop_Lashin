@@ -8,7 +8,7 @@ Resource    ../tests/resources_pages/menu_items.resource
 Resource    ../tests/resources_pages/filter_page.resource
 
 
-Test Setup            main.Open Page     web_page=https://testshop.polteq-testing.com/
+Test Setup            main.Open Page     
 Test Teardown         main.Close Page
 
 
