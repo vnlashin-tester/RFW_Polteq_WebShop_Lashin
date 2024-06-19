@@ -19,6 +19,10 @@ jobs:
           --shm-size=2g
 
     steps:
+
+    - uses: browser-actions/setup-chrome@v1
+    - run: chrome --version
+    
     - name: Checkout code
       uses: actions/checkout@v2
 
