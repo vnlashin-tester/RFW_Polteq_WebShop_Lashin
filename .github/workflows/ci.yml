@@ -28,4 +28,4 @@ jobs:
     - name: Run Robot Framework tests
       run: |
         source .venv/bin/activate
-        HEADLESS=True robot --variable HEADLESS:True --variable BROWSER:chrome tests/test_suite.robot
+        HEADLESS=True robot --variable HEADLESS:True --variable BROWSER:chrome tests/

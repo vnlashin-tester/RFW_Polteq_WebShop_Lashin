@@ -15,4 +15,4 @@ do
 done
 
 export HEADLESS
-robot --variable HEADLESS:$HEADLESS --variable BROWSER:chrome tests/test_suite.robot
+robot --variable HEADLESS:$HEADLESS --variable BROWSER:chrome tests/
