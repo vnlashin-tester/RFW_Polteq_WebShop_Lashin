@@ -1,12 +1,57 @@
-# Automating Online Store Website (Polteq-Webshop) with Robot Framework
+# Polteq WebShop Testing Project (Robot Framework)
+---
+## Project Overview
 
-## Project Description
+This project is designed to test the functionality and user experience of the Polteq WebShop using the Robot Framework. The aim is to ensure that the web application meets the expected standards of quality, performance, and reliability through comprehensive automated testing.
 
-The main goal of this project is to show the ability to write autotests that cover the main functions of an online store (for writing regression tests).
 The Polteq web shop is a special website written for company employees and is used exclusively for training testing skills and writing automated tests.
-Also, for privacy purposes, the real login/password has been removed from the code, so it will not be possible to run automatic tests.
+
 Below I am attaching photos and examples of performing autotests.
 
+---
+## Goals
+
+- **Automated Testing:** Implement automated tests to cover essential functionalities of the Polteq WebShop.
+- **Regression Testing:** Facilitate regression testing to ensure that new changes do not introduce new bugs.
+- **Quality Assurance:** Enhance the overall quality and performance of the web application.
+- **Efficiency:** Increase the efficiency of testing processes, reducing the time and effort required for manual testing.
+---
+## Project Structure
+
+The project consists of the following key components:
+
+- `tests/`: Directory containing test cases written in Robot Framework.
+  - `cart.robot`: Tests related to the shopping cart functionality.
+  - `login_negative_1.robot`: Negative test cases for the login functionality.
+  - `login_positive.robot`: Positive test cases for the login functionality.
+  - `menu_items.robot`: Tests for the menu items and navigation.
+  - `filter_page.robot`: Tests for filtering products on the product page.
+  - `product_card.robot`: Tests for the product card details and interactions.
+  - `search_field.robot`: Tests for the search functionality.
+  - `complex_test.robot`: Complex test cases covering multiple functionalities.
+- `resources_pages/`: Directory containing reusable resources and page objects.
+- `variables.py`: Script containing variables used across test cases.
+- `browser_options.py`: Script to set browser options for the tests.
+- `requirements.txt`: List of dependencies required for the project.
+- `run_tests.sh`: Shell script to execute the test cases.
+- `results/`: Directory where test results are stored.
+- `.venv/`: Virtual environment for Python dependencies.
+- `.gitignore`: Git configuration to ignore specific files and directories.
+- `.gitattributes`: Git configuration for attribute management.
+---
+## Setup and Installation
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/yourusername/polteq-webshop-testing.git
+   cd polteq-webshop-testing
+2. Create and Activate Virtual Environment:
+   ```python3 -m venv .venv
+   source .venv/bin/activate
+3. Install Dependencies:
+   ```pip install -r requirements.txt
+   
+---
 ## Approaches Used
 
 - **Robot Framework**: A keyword-driven testing framework used for test automation and robotic process automation.
@@ -16,7 +61,10 @@ Below I am attaching photos and examples of performing autotests.
 - **Behavior-Driven Development (BDD)**: Adopted to improve collaboration between developers, testers, and non-technical stakeholders.
 - **Data-Driven Development (DDD)** is an approach to software development that focuses on using data for creating and testing applications. The main idea is to separate test data from test scripts, allowing for easy modifications and additions of new data without changing the test code. This enhances the flexibility and scalability of testing.
   I use DDD to create tests for sequences of invalid login/password values. This approach allows for easy management of various data sets for testing, ensuring that the system correctly handles all possible combinations of incorrect data. This improves the quality and reliability of the software by ensuring comprehensive test coverage.
+- **Keyword-Driven Testing**: Utilizes keywords to represent actions in the tests, making them readable and maintainable.
+- **Page Object Model**: Implements the Page Object Model (POM) to separate test logic from the page-specific code, enhancing reusability.
 
+---
 ## Project Artefacts
 Artefacts can be found on Google Drive.
 
@@ -25,15 +73,15 @@ Artefacts can be found on Google Drive.
 - <a href="https://docs.google.com/spreadsheets/d/1bLJAJp9h3iQc03_BMJ5PXBq2RVoE54kseyUYoxY_feQ/edit?usp=sharing" target="_blank">Checklists and Trace Matrix</a>
 - <a href="https://vnlashin-tester.github.io/Mind_Map/markmap.html" target="_blank">Mind_Map</a> 
 
-
+---
 ## Test Report from Robot Framework
 
 ![Test Report](https://drive.google.com/uc?export=view&id=1Hw8Sw07K0l8vCCZizSgHNxVGx3jD0YrK)
-
+---
 ## Project Foto
 - You can view the project photo [here](https://drive.google.com/uc?export=view&id=1d3CMMJc_0MQ3H5FAAPaL0dVDJvBJDmS7).
 - You can view the CI (GitHub Actions) photo [here](#).
-
+---
 ## Project Video
 
 You can watch the project video [here](https://drive.google.com/file/d/1PJ2qzt9GrmmSLh_gfbHwnlS_IyGcrJIa/preview).
