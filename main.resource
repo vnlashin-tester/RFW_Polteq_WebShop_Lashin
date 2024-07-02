@@ -2,16 +2,21 @@
 
 Documentation    In this file are main resources for project
 Library    SeleniumLibrary
+Library    Collections
+Library    OperatingSystem
+Library    test_setup.py
 
 
 *** Keywords ***
 
+Get Chrome Options
+    ${options}=    Evaluate    test_setup.get_chrome_options()    modules=test_setup
+    RETURN    ${options}
 Open Page 
     [Arguments]        ${web_page}=https://testshop.polteq-testing.com    ${browser}=chrome
+    ${options}=    Get Chrome Options
 
-    SeleniumLibrary.Open Browser  ${web_page}  ${browser}  
-
-    
+    SeleniumLibrary.Open Browser  ${web_page}  ${browser}  options=${options}
     Maximize Browser Window
 
 Close Page
@@ -22,7 +27,7 @@ Close Page
 *** Variables ***
 
 # General variables that are actual for most pages:
-
+${options}=    Evaluate    sys.modules['browser_options'].get_browser_options()    sys, browser_options
 # Filter_by (each page)
 ${filter_by_block}    //p[contains(text(), "Filter By")]
 # Logo (to the maim_page)
@@ -40,4 +45,9 @@ ${menu_art}    //li[@id="category-9"]
 #  For Search field
 ${search_field}    //input[@type="text"]
 
+# For CI
 ${REMOTE_URL}    http://localhost:4444/wd/hub
+
+${HEADLESS}    False
+
+${HEADLESS}   ${HEADLESS}

@@ -1,243 +1,365 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on darwin)" generated="2024-07-02T11:18:35.015142" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.2 on darwin)" generated="2024-07-02T12:01:12.952177" rpa="false" schemaversion="5">
 <suite id="s1" name="RFW Polteq WebShop Lashin" source="/Users/vladimirlashin/Git/RFW_Polteq_WebShop_Lashin">
 <suite id="s1-s1" name="Tests" source="/Users/vladimirlashin/Git/RFW_Polteq_WebShop_Lashin/tests">
 <suite id="s1-s1-s1" name="Complex Test" source="/Users/vladimirlashin/Git/RFW_Polteq_WebShop_Lashin/tests/complex_test.robot">
 <test id="s1-s1-s1-t1" name="Complex test case" line="14">
 <kw name="Open Page" owner="main" type="SETUP">
+<kw name="Get Chrome Options" owner="main">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-02T12:01:13.214020" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x110f39d00&gt;</msg>
+<var>${options}</var>
+<arg>test_setup.get_chrome_options()</arg>
+<arg>modules=test_setup</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-02T12:01:13.213429" elapsed="0.000801"/>
+</kw>
+<return>
+<value>${options}</value>
+<status status="PASS" start="2024-07-02T12:01:13.214456" elapsed="0.000164"/>
+</return>
+<msg time="2024-07-02T12:01:13.214902" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x110f39d00&gt;</msg>
+<var>${options}</var>
+<status status="PASS" start="2024-07-02T12:01:13.212181" elapsed="0.002894"/>
+</kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-07-02T11:18:35.381059" level="INFO">Opening browser 'chrome' to base url 'https://testshop.polteq-testing.com'.</msg>
+<msg time="2024-07-02T12:01:13.216803" level="INFO">Opening browser 'chrome' to base url 'https://testshop.polteq-testing.com'.</msg>
 <arg>${web_page}</arg>
 <arg>${browser}</arg>
+<arg>options=${options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-07-02T11:18:35.380424" elapsed="8.396851"/>
+<status status="PASS" start="2024-07-02T12:01:13.215411" elapsed="6.832812"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<msg time="2024-07-02T12:01:20.055617" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+0   chromedriver                        0x000000010b6450e8 chromedriver + 5169384
+1   chromedriver                        0x000000010b63cfba chromedriver + 5136314
+2   chromedriver                        0x000000010b1b936c chromedriver + 402284
+3   chromedriver                        0x000000010b18e5f4 chromedriver + 226804
+4   chromedriver                        0x000000010b23253d chromedriver + 898365
+5   chromedriver                        0x000000010b248908 chromedriver + 989448
+6   chromedriver                        0x000000010b229853 chromedriver + 862291
+7   chromedriver                        0x000000010b1f95c6 chromedriver + 665030
+8   chromedriver                        0x000000010b1f9e4e chromedriver + 667214
+9   chromedriver                        0x000000010b607d00 chromedriver + 4918528
+10  chromedriver                        0x000000010b60ccfd chromedriver + 4939005
+11  chromedriver                        0x000000010b60d3d5 chromedriver + 4940757
+12  chromedriver                        0x000000010b5e8de4 chromedriver + 4791780
+13  chromedriver                        0x000000010b60d6c9 chromedriver + 4941513
+14  chromedriver                        0x000000010b5da5b4 chromedriver + 4732340
+15  chromedriver                        0x000000010b62d898 chromedriver + 5073048
+16  chromedriver                        0x000000010b62da57 chromedriver + 5073495
+17  chromedriver                        0x000000010b63cb6e chromedriver + 5135214
+18  libsystem_pthread.dylib             0x00007ff808d7218b _pthread_start + 99
+19  libsystem_pthread.dylib             0x00007ff808d6dae3 thread_start + 15
+</msg>
+<msg time="2024-07-02T12:01:20.058271" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+0   chromedriver                        0x000000010b6450e8 chromedriver + 5169384
+1   chromedriver                        0x000000010b63cfba chromedriver + 5136314
+2   chromedriver                        0x000000010b1b936c chromedriver + 402284
+3   chromedriver                        0x000000010b18e5f4 chromedriver + 226804
+4   chromedriver                        0x000000010b23253d chromedriver + 898365
+5   chromedriver                        0x000000010b248908 chromedriver + 989448
+6   chromedriver                        0x000000010b229853 chromedriver + 862291
+7   chromedriver                        0x000000010b1f95c6 chromedriver + 665030
+8   chromedriver                        0x000000010b1f9e4e chromedriver + 667214
+9   chromedriver                        0x000000010b607d00 chromedriver + 4918528
+10  chromedriver                        0x000000010b60ccfd chromedriver + 4939005
+11  chromedriver                        0x000000010b60d3d5 chromedriver + 4940757
+12  chromedriver                        0x000000010b5e8de4 chromedriver + 4791780
+13  chromedriver                        0x000000010b60d6c9 chromedriver + 4941513
+14  chromedriver                        0x000000010b5da5b4 chromedriver + 4732340
+15  chromedriver                        0x000000010b62d898 chromedriver + 5073048
+16  chromedriver                        0x000000010b62da57 chromedriver + 5073495
+17  chromedriver                        0x000000010b63cb6e chromedriver + 5135214
+18  libsystem_pthread.dylib             0x00007ff808d7218b _pthread_start + 99
+19  libsystem_pthread.dylib             0x00007ff808d6dae3 thread_start + 15
+</msg>
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-07-02T11:18:43.778534" elapsed="0.337595"/>
+<status status="FAIL" start="2024-07-02T12:01:20.049649" elapsed="0.015455">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+0   chromedriver                        0x000000010b6450e8 chromedriver + 5169384
+1   chromedriver                        0x000000010b63cfba chromedriver + 5136314
+2   chromedriver                        0x000000010b1b936c chromedriver + 402284
+3   chromedriver                        0x000000010b18e5f4 chromedriver + 226804
+4   chromedriver                        0x000000010b23253d chromedriver + 898365
+5   chromedriver                        0x000000010b248908 chromedriver + 989448
+6   chromedriver                        0x000000010b229853 chromedriver + 862291
+7   chromedriver                        0x000000010b1f95c6 chromedriver + 665030
+    [ Message content over the limit has been removed. ]
+9   chromedriver                        0x000000010b607d00 chromedriver + 4918528
+10  chromedriver                        0x000000010b60ccfd chromedriver + 4939005
+11  chromedriver                        0x000000010b60d3d5 chromedriver + 4940757
+12  chromedriver                        0x000000010b5e8de4 chromedriver + 4791780
+13  chromedriver                        0x000000010b60d6c9 chromedriver + 4941513
+14  chromedriver                        0x000000010b5da5b4 chromedriver + 4732340
+15  chromedriver                        0x000000010b62d898 chromedriver + 5073048
+16  chromedriver                        0x000000010b62da57 chromedriver + 5073495
+17  chromedriver                        0x000000010b63cb6e chromedriver + 5135214
+18  libsystem_pthread.dylib             0x00007ff808d7218b _pthread_start + 99
+19  libsystem_pthread.dylib             0x00007ff808d6dae3 thread_start + 15</status>
 </kw>
-<status status="PASS" start="2024-07-02T11:18:35.379305" elapsed="8.737139"/>
-</kw>
-<kw name="Log in from main page" owner="login_logout">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-02T11:18:44.118598" level="INFO">Clicking element '//div[@id="_desktop_user_info"]'.</msg>
-<arg>${sign_in_main_page}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-02T11:18:44.117740" elapsed="0.943713"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${header_page_of_autorisation}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-02T11:18:45.062079" elapsed="0.030167"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-02T11:18:45.093049" level="INFO">Clicking element '//div[@class="col-md-6"]/input[@type="email"]' with clear.</msg>
-<arg>${email_field_autorisation}</arg>
-<arg>clear</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-02T11:18:45.092573" elapsed="0.353547"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-02T11:18:45.447086" level="INFO">Typing text 'tester@test.com' into text field '//div[@class="col-md-6"]/input[@type="email"]'.</msg>
-<arg>${email_field_autorisation}</arg>
-<arg>${LOGIN}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-02T11:18:45.446533" elapsed="0.267499"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-02T11:18:45.715248" level="INFO">Clicking element '//input[@type="password"]' with clear.</msg>
-<arg>${password_field_autorisation}</arg>
-<arg>clear</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-02T11:18:45.714532" elapsed="0.305647"/>
-</kw>
-<kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2024-07-02T11:18:46.021387" level="INFO">Typing password into text field '//input[@type="password"]'.</msg>
-<msg time="2024-07-02T11:18:46.065456" level="INFO">Temporally setting log level to: NONE</msg>
-<arg>${password_field_autorisation}</arg>
-<arg>${PASSWORD}</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-02T11:18:46.020558" elapsed="0.084737"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-07-02T11:18:46.106130" level="INFO">Clicking button '//button[@id="submit-login"]'.</msg>
-<arg>${button_sighn_in_form_of_autorisation}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-02T11:18:46.105623" elapsed="1.427368"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${header_page_witch_autorased}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-02T11:18:47.533377" elapsed="0.022636"/>
-</kw>
-<status status="PASS" start="2024-07-02T11:18:44.117084" elapsed="3.439186"/>
-</kw>
-<kw name="Confirm that discount banner is avaliable on the page">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-02T11:18:47.557633" level="INFO">Clicking element '//div[@id="_desktop_logo"]'.</msg>
-<arg>${main_logo_in_the_header}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-02T11:18:47.557217" elapsed="1.311941"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${carousel_on_main_page}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-02T11:18:48.869503" elapsed="0.027465"/>
-</kw>
-<kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-07-02T11:18:48.911790" level="INFO">Current page contains element '//a[@class="banner"]'.</msg>
-<arg>${discount_banner_on_the_main_page}</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-07-02T11:18:48.897320" elapsed="0.014729"/>
-</kw>
-<status status="PASS" start="2024-07-02T11:18:47.556697" elapsed="1.355577"/>
-</kw>
-<kw name="Drop Down Menu &gt; Submenu &gt; Product cadrs &gt; Add good to the cart &gt; Order &gt; The Cart">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-02T11:18:48.914118" level="INFO">Clicking element '//div[@id="_desktop_logo"]'.</msg>
-<arg>${main_logo_in_the_header}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-02T11:18:48.913458" elapsed="1.382779"/>
-</kw>
-<kw name="Mouse Over" owner="SeleniumLibrary">
-<msg time="2024-07-02T11:18:50.297058" level="INFO">Simulating Mouse Over on element '//li[@ id="category-3" ]/a[@class="dropdown-item"]'.</msg>
-<arg>${drop_down_menu_clothes}</arg>
-<doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<status status="PASS" start="2024-07-02T11:18:50.296587" elapsed="0.293233"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${submenu_drop_down_menu_clothes}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-02T11:18:50.590171" elapsed="0.024404"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-02T11:18:50.615435" level="INFO">Clicking element '//li[@id="category-4"]/a[contains(text(), "Men")]'.</msg>
-<arg>${submenu_drop_down_menu_clothes}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-02T11:18:50.614899" elapsed="0.964957"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${header_of_men_clothes}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-02T11:18:51.580175" elapsed="0.024264"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-02T11:18:51.605179" level="INFO">Clicking element '//article[@data-id-product="1"]'.</msg>
-<arg>${article_from_men_clothes}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-02T11:18:51.604755" elapsed="1.253121"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${button_add_to_cart}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-02T11:18:52.858223" elapsed="0.024835"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-02T11:18:52.883811" level="INFO">Clicking element '//button[@data-button-action="add-to-cart"]'.</msg>
-<arg>${button_add_to_cart}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-02T11:18:52.883388" elapsed="0.058015"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${modal_window_of_cart}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-02T11:18:52.941750" elapsed="1.713299"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-02T11:18:54.676617" level="INFO">Clicking element '//a[@class="btn btn-primary"]'.</msg>
-<arg>${button_proceed_to_checkout}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-02T11:18:54.676063" elapsed="1.398451"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${header_of_shopping_cart}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-02T11:18:56.074973" elapsed="0.028641"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-02T11:18:56.104478" level="INFO">Clicking element '//a[@class="btn btn-primary"]'.</msg>
-<arg>${button_proceed_to_checkout}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-02T11:18:56.104004" elapsed="0.847854"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${section_personal_information}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-02T11:18:56.952621" elapsed="0.025880"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-02T11:18:56.979394" level="INFO">Clicking element '//button[@name="confirm-addresses"]'.</msg>
-<arg>${button_confirm_adress_continue}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-02T11:18:56.978855" elapsed="1.576932"/>
-</kw>
-<kw name="Element Attribute Value Should Be" owner="SeleniumLibrary">
-<msg time="2024-07-02T11:18:58.596824" level="INFO">Element '//span/input[@id="delivery_option_1"]' attribute 'value' contains value '1,'.</msg>
-<arg>locator=${radio_with_first_position}</arg>
-<arg>attribute=value</arg>
-<arg>expected=1,</arg>
-<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
-<status status="PASS" start="2024-07-02T11:18:58.556209" elapsed="0.040949"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-07-02T11:18:58.598495" level="INFO">Clicking button '//button[@name="confirmDeliveryOption"]'.</msg>
-<arg>${button_continue_in_cart}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-02T11:18:58.597702" elapsed="1.389743"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${check_i_agree_in_cart}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-02T11:18:59.987796" elapsed="0.028071"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-02T11:19:00.016858" level="INFO">Clicking element '//form[@id="conditions-to-approve"]/ul/li[1]'.</msg>
-<arg>${check_i_agree_in_cart}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-02T11:19:00.016275" elapsed="0.060191"/>
-</kw>
-<kw name="Element Attribute Value Should Be" owner="SeleniumLibrary">
-<msg time="2024-07-02T11:19:00.101884" level="INFO">Element '//div[@id="payment-confirmation"]//button[@type="submit"]' attribute 'disabled' contains value 'true'.</msg>
-<arg>locator=${button_place_order}</arg>
-<arg>attribute=disabled</arg>
-<arg>expected=true</arg>
-<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
-<status status="PASS" start="2024-07-02T11:19:00.077151" elapsed="0.025014"/>
-</kw>
-<status status="PASS" start="2024-07-02T11:18:48.912846" elapsed="11.189575"/>
+<status status="FAIL" start="2024-07-02T12:01:13.211367" elapsed="6.854402">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+0   chromedriver                        0x000000010b6450e8 chromedriver + 5169384
+1   chromedriver                        0x000000010b63cfba chromedriver + 5136314
+2   chromedriver                        0x000000010b1b936c chromedriver + 402284
+3   chromedriver                        0x000000010b18e5f4 chromedriver + 226804
+4   chromedriver                        0x000000010b23253d chromedriver + 898365
+5   chromedriver                        0x000000010b248908 chromedriver + 989448
+6   chromedriver                        0x000000010b229853 chromedriver + 862291
+7   chromedriver                        0x000000010b1f95c6 chromedriver + 665030
+    [ Message content over the limit has been removed. ]
+9   chromedriver                        0x000000010b607d00 chromedriver + 4918528
+10  chromedriver                        0x000000010b60ccfd chromedriver + 4939005
+11  chromedriver                        0x000000010b60d3d5 chromedriver + 4940757
+12  chromedriver                        0x000000010b5e8de4 chromedriver + 4791780
+13  chromedriver                        0x000000010b60d6c9 chromedriver + 4941513
+14  chromedriver                        0x000000010b5da5b4 chromedriver + 4732340
+15  chromedriver                        0x000000010b62d898 chromedriver + 5073048
+16  chromedriver                        0x000000010b62da57 chromedriver + 5073495
+17  chromedriver                        0x000000010b63cb6e chromedriver + 5135214
+18  libsystem_pthread.dylib             0x00007ff808d7218b _pthread_start + 99
+19  libsystem_pthread.dylib             0x00007ff808d6dae3 thread_start + 15</status>
 </kw>
 <kw name="Close Page" owner="main" type="TEARDOWN">
 <kw name="Delete All Cookies" owner="SeleniumLibrary">
+<msg time="2024-07-02T12:01:20.070789" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+0   chromedriver                        0x000000010b6450e8 chromedriver + 5169384
+1   chromedriver                        0x000000010b63cfba chromedriver + 5136314
+2   chromedriver                        0x000000010b1b936c chromedriver + 402284
+3   chromedriver                        0x000000010b18e5f4 chromedriver + 226804
+4   chromedriver                        0x000000010b23253d chromedriver + 898365
+5   chromedriver                        0x000000010b248908 chromedriver + 989448
+6   chromedriver                        0x000000010b229853 chromedriver + 862291
+7   chromedriver                        0x000000010b1f95c6 chromedriver + 665030
+8   chromedriver                        0x000000010b1f9e4e chromedriver + 667214
+9   chromedriver                        0x000000010b607d00 chromedriver + 4918528
+10  chromedriver                        0x000000010b60ccfd chromedriver + 4939005
+11  chromedriver                        0x000000010b60d3d5 chromedriver + 4940757
+12  chromedriver                        0x000000010b5e8de4 chromedriver + 4791780
+13  chromedriver                        0x000000010b60d6c9 chromedriver + 4941513
+14  chromedriver                        0x000000010b5da5b4 chromedriver + 4732340
+15  chromedriver                        0x000000010b62d898 chromedriver + 5073048
+16  chromedriver                        0x000000010b62da57 chromedriver + 5073495
+17  chromedriver                        0x000000010b63cb6e chromedriver + 5135214
+18  libsystem_pthread.dylib             0x00007ff808d7218b _pthread_start + 99
+19  libsystem_pthread.dylib             0x00007ff808d6dae3 thread_start + 15
+</msg>
+<msg time="2024-07-02T12:01:20.072720" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+0   chromedriver                        0x000000010b6450e8 chromedriver + 5169384
+1   chromedriver                        0x000000010b63cfba chromedriver + 5136314
+2   chromedriver                        0x000000010b1b936c chromedriver + 402284
+3   chromedriver                        0x000000010b18e5f4 chromedriver + 226804
+4   chromedriver                        0x000000010b23253d chromedriver + 898365
+5   chromedriver                        0x000000010b248908 chromedriver + 989448
+6   chromedriver                        0x000000010b229853 chromedriver + 862291
+7   chromedriver                        0x000000010b1f95c6 chromedriver + 665030
+8   chromedriver                        0x000000010b1f9e4e chromedriver + 667214
+9   chromedriver                        0x000000010b607d00 chromedriver + 4918528
+10  chromedriver                        0x000000010b60ccfd chromedriver + 4939005
+11  chromedriver                        0x000000010b60d3d5 chromedriver + 4940757
+12  chromedriver                        0x000000010b5e8de4 chromedriver + 4791780
+13  chromedriver                        0x000000010b60d6c9 chromedriver + 4941513
+14  chromedriver                        0x000000010b5da5b4 chromedriver + 4732340
+15  chromedriver                        0x000000010b62d898 chromedriver + 5073048
+16  chromedriver                        0x000000010b62da57 chromedriver + 5073495
+17  chromedriver                        0x000000010b63cb6e chromedriver + 5135214
+18  libsystem_pthread.dylib             0x00007ff808d7218b _pthread_start + 99
+19  libsystem_pthread.dylib             0x00007ff808d6dae3 thread_start + 15
+</msg>
 <doc>Deletes all cookies.</doc>
-<status status="PASS" start="2024-07-02T11:19:00.103696" elapsed="0.020352"/>
+<status status="FAIL" start="2024-07-02T12:01:20.067631" elapsed="0.007842">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+0   chromedriver                        0x000000010b6450e8 chromedriver + 5169384
+1   chromedriver                        0x000000010b63cfba chromedriver + 5136314
+2   chromedriver                        0x000000010b1b936c chromedriver + 402284
+3   chromedriver                        0x000000010b18e5f4 chromedriver + 226804
+4   chromedriver                        0x000000010b23253d chromedriver + 898365
+5   chromedriver                        0x000000010b248908 chromedriver + 989448
+6   chromedriver                        0x000000010b229853 chromedriver + 862291
+7   chromedriver                        0x000000010b1f95c6 chromedriver + 665030
+    [ Message content over the limit has been removed. ]
+9   chromedriver                        0x000000010b607d00 chromedriver + 4918528
+10  chromedriver                        0x000000010b60ccfd chromedriver + 4939005
+11  chromedriver                        0x000000010b60d3d5 chromedriver + 4940757
+12  chromedriver                        0x000000010b5e8de4 chromedriver + 4791780
+13  chromedriver                        0x000000010b60d6c9 chromedriver + 4941513
+14  chromedriver                        0x000000010b5da5b4 chromedriver + 4732340
+15  chromedriver                        0x000000010b62d898 chromedriver + 5073048
+16  chromedriver                        0x000000010b62da57 chromedriver + 5073495
+17  chromedriver                        0x000000010b63cb6e chromedriver + 5135214
+18  libsystem_pthread.dylib             0x00007ff808d7218b _pthread_start + 99
+19  libsystem_pthread.dylib             0x00007ff808d6dae3 thread_start + 15</status>
 </kw>
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2024-07-02T11:19:00.124353" elapsed="0.157570"/>
+<status status="PASS" start="2024-07-02T12:01:20.075858" elapsed="0.124660"/>
 </kw>
-<status status="PASS" start="2024-07-02T11:19:00.103074" elapsed="0.179115"/>
+<status status="FAIL" start="2024-07-02T12:01:20.067007" elapsed="0.133922">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+0   chromedriver                        0x000000010b6450e8 chromedriver + 5169384
+1   chromedriver                        0x000000010b63cfba chromedriver + 5136314
+2   chromedriver                        0x000000010b1b936c chromedriver + 402284
+3   chromedriver                        0x000000010b18e5f4 chromedriver + 226804
+4   chromedriver                        0x000000010b23253d chromedriver + 898365
+5   chromedriver                        0x000000010b248908 chromedriver + 989448
+6   chromedriver                        0x000000010b229853 chromedriver + 862291
+7   chromedriver                        0x000000010b1f95c6 chromedriver + 665030
+    [ Message content over the limit has been removed. ]
+9   chromedriver                        0x000000010b607d00 chromedriver + 4918528
+10  chromedriver                        0x000000010b60ccfd chromedriver + 4939005
+11  chromedriver                        0x000000010b60d3d5 chromedriver + 4940757
+12  chromedriver                        0x000000010b5e8de4 chromedriver + 4791780
+13  chromedriver                        0x000000010b60d6c9 chromedriver + 4941513
+14  chromedriver                        0x000000010b5da5b4 chromedriver + 4732340
+15  chromedriver                        0x000000010b62d898 chromedriver + 5073048
+16  chromedriver                        0x000000010b62da57 chromedriver + 5073495
+17  chromedriver                        0x000000010b63cb6e chromedriver + 5135214
+18  libsystem_pthread.dylib             0x00007ff808d7218b _pthread_start + 99
+19  libsystem_pthread.dylib             0x00007ff808d6dae3 thread_start + 15</status>
 </kw>
-<status status="PASS" start="2024-07-02T11:18:35.377522" elapsed="24.904897"/>
+<status status="FAIL" start="2024-07-02T12:01:13.210041" elapsed="6.991227">Setup failed:
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+0   chromedriver                        0x000000010b6450e8 chromedriver + 5169384
+1   chromedriver                        0x000000010b63cfba chromedriver + 5136314
+2   chromedriver                        0x000000010b1b936c chromedriver + 402284
+3   chromedriver                        0x000000010b18e5f4 chromedriver + 226804
+4   chromedriver                        0x000000010b23253d chromedriver + 898365
+5   chromedriver                        0x000000010b248908 chromedriver + 989448
+6   chromedriver                        0x000000010b229853 chromedriver + 862291
+7   chromedriver                        0x000000010b1f95c6 chromedriver + 665030
+    [ Message content over the limit has been removed. ]
+9   chromedriver                        0x000000010b607d00 chromedriver + 4918528
+10  chromedriver                        0x000000010b60ccfd chromedriver + 4939005
+11  chromedriver                        0x000000010b60d3d5 chromedriver + 4940757
+12  chromedriver                        0x000000010b5e8de4 chromedriver + 4791780
+13  chromedriver                        0x000000010b60d6c9 chromedriver + 4941513
+14  chromedriver                        0x000000010b5da5b4 chromedriver + 4732340
+15  chromedriver                        0x000000010b62d898 chromedriver + 5073048
+16  chromedriver                        0x000000010b62da57 chromedriver + 5073495
+17  chromedriver                        0x000000010b63cb6e chromedriver + 5135214
+18  libsystem_pthread.dylib             0x00007ff808d7218b _pthread_start + 99
+19  libsystem_pthread.dylib             0x00007ff808d6dae3 thread_start + 15
+
+Also teardown failed:
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+0   chromedriver                        0x000000010b6450e8 chromedriver + 5169384
+1   chromedriver                        0x000000010b63cfba chromedriver + 5136314
+2   chromedriver                        0x000000010b1b936c chromedriver + 402284
+3   chromedriver                        0x000000010b18e5f4 chromedriver + 226804
+4   chromedriver                        0x000000010b23253d chromedriver + 898365
+5   chromedriver                        0x000000010b248908 chromedriver + 989448
+6   chromedriver                        0x000000010b229853 chromedriver + 862291
+7   chromedriver                        0x000000010b1f95c6 chromedriver + 665030
+    [ Message content over the limit has been removed. ]
+9   chromedriver                        0x000000010b607d00 chromedriver + 4918528
+10  chromedriver                        0x000000010b60ccfd chromedriver + 4939005
+11  chromedriver                        0x000000010b60d3d5 chromedriver + 4940757
+12  chromedriver                        0x000000010b5e8de4 chromedriver + 4791780
+13  chromedriver                        0x000000010b60d6c9 chromedriver + 4941513
+14  chromedriver                        0x000000010b5da5b4 chromedriver + 4732340
+15  chromedriver                        0x000000010b62d898 chromedriver + 5073048
+16  chromedriver                        0x000000010b62da57 chromedriver + 5073495
+17  chromedriver                        0x000000010b63cb6e chromedriver + 5135214
+18  libsystem_pthread.dylib             0x00007ff808d7218b _pthread_start + 99
+19  libsystem_pthread.dylib             0x00007ff808d6dae3 thread_start + 15</status>
 </test>
 <doc>This is first test</doc>
-<status status="PASS" start="2024-07-02T11:18:35.085639" elapsed="25.197960"/>
+<status status="FAIL" start="2024-07-02T12:01:13.005141" elapsed="7.198015"/>
 </suite>
-<status status="PASS" start="2024-07-02T11:18:35.083647" elapsed="25.202011"/>
+<status status="FAIL" start="2024-07-02T12:01:13.003292" elapsed="7.201845"/>
 </suite>
-<status status="PASS" start="2024-07-02T11:18:35.021191" elapsed="25.265722"/>
+<status status="FAIL" start="2024-07-02T12:01:12.956603" elapsed="7.249956"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="RFW Polteq WebShop Lashin">RFW Polteq WebShop Lashin</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="Tests">RFW Polteq WebShop Lashin.Tests</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Complex Test">RFW Polteq WebShop Lashin.Tests.Complex Test</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="RFW Polteq WebShop Lashin">RFW Polteq WebShop Lashin</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Tests">RFW Polteq WebShop Lashin.Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Complex Test">RFW Polteq WebShop Lashin.Tests.Complex Test</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2024-07-02T12:01:20.055617" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+0   chromedriver                        0x000000010b6450e8 chromedriver + 5169384
+1   chromedriver                        0x000000010b63cfba chromedriver + 5136314
+2   chromedriver                        0x000000010b1b936c chromedriver + 402284
+3   chromedriver                        0x000000010b18e5f4 chromedriver + 226804
+4   chromedriver                        0x000000010b23253d chromedriver + 898365
+5   chromedriver                        0x000000010b248908 chromedriver + 989448
+6   chromedriver                        0x000000010b229853 chromedriver + 862291
+7   chromedriver                        0x000000010b1f95c6 chromedriver + 665030
+8   chromedriver                        0x000000010b1f9e4e chromedriver + 667214
+9   chromedriver                        0x000000010b607d00 chromedriver + 4918528
+10  chromedriver                        0x000000010b60ccfd chromedriver + 4939005
+11  chromedriver                        0x000000010b60d3d5 chromedriver + 4940757
+12  chromedriver                        0x000000010b5e8de4 chromedriver + 4791780
+13  chromedriver                        0x000000010b60d6c9 chromedriver + 4941513
+14  chromedriver                        0x000000010b5da5b4 chromedriver + 4732340
+15  chromedriver                        0x000000010b62d898 chromedriver + 5073048
+16  chromedriver                        0x000000010b62da57 chromedriver + 5073495
+17  chromedriver                        0x000000010b63cb6e chromedriver + 5135214
+18  libsystem_pthread.dylib             0x00007ff808d7218b _pthread_start + 99
+19  libsystem_pthread.dylib             0x00007ff808d6dae3 thread_start + 15
+</msg>
+<msg time="2024-07-02T12:01:20.070789" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+0   chromedriver                        0x000000010b6450e8 chromedriver + 5169384
+1   chromedriver                        0x000000010b63cfba chromedriver + 5136314
+2   chromedriver                        0x000000010b1b936c chromedriver + 402284
+3   chromedriver                        0x000000010b18e5f4 chromedriver + 226804
+4   chromedriver                        0x000000010b23253d chromedriver + 898365
+5   chromedriver                        0x000000010b248908 chromedriver + 989448
+6   chromedriver                        0x000000010b229853 chromedriver + 862291
+7   chromedriver                        0x000000010b1f95c6 chromedriver + 665030
+8   chromedriver                        0x000000010b1f9e4e chromedriver + 667214
+9   chromedriver                        0x000000010b607d00 chromedriver + 4918528
+10  chromedriver                        0x000000010b60ccfd chromedriver + 4939005
+11  chromedriver                        0x000000010b60d3d5 chromedriver + 4940757
+12  chromedriver                        0x000000010b5e8de4 chromedriver + 4791780
+13  chromedriver                        0x000000010b60d6c9 chromedriver + 4941513
+14  chromedriver                        0x000000010b5da5b4 chromedriver + 4732340
+15  chromedriver                        0x000000010b62d898 chromedriver + 5073048
+16  chromedriver                        0x000000010b62da57 chromedriver + 5073495
+17  chromedriver                        0x000000010b63cb6e chromedriver + 5135214
+18  libsystem_pthread.dylib             0x00007ff808d7218b _pthread_start + 99
+19  libsystem_pthread.dylib             0x00007ff808d6dae3 thread_start + 15
+</msg>
 </errors>
 </robot>
