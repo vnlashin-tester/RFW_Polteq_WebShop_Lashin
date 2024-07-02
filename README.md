@@ -80,7 +80,8 @@ Artefacts can be found on Google Drive.
 ---
 ## Project Foto
 - You can view the project photo [here](https://drive.google.com/uc?export=view&id=1d3CMMJc_0MQ3H5FAAPaL0dVDJvBJDmS7).
-- You can view the CI (GitHub Actions) photo [here](#).
+- You can view the CI (GitHub Actions) photo [here](https://drive.google.com/file/d/1vOBRSRX12-UI6GEWV8x3-xjCLREiXx87/view?usp=sharing)
+  and [here](https://drive.google.com/file/d/1Wrl5hhEOQcEUbO4lS72ndIzb_T5x5P_B/view?usp=sharing).
 ---
 ## Project Video
 
