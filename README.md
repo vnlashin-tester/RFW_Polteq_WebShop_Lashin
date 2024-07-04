@@ -38,18 +38,6 @@ The project consists of the following key components:
 - `.venv/`: Virtual environment for Python dependencies.
 - `.gitignore`: Git configuration to ignore specific files and directories.
 - `.gitattributes`: Git configuration for attribute management.
----
-## Setup and Installation
-
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/yourusername/polteq-webshop-testing.git
-   cd polteq-webshop-testing
-2. Create and Activate Virtual Environment:
-   ```python3 -m venv .venv
-   source .venv/bin/activate
-3. Install Dependencies:
-   ```pip install -r requirements.txt
    
 ---
 ## Approaches Used
